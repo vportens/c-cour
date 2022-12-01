@@ -426,25 +426,176 @@ Console.WriteLine(c); // affichera HelloWorld
 
 ---
 
+<!-- fin de cour faire tp pratique  -->
+---
+
 ## Scope
+
+Le Scope  | La portee
+
+
+{
+
+}
 
 ---
 
 ### Qu'est ce que le scope et en quoi impact-il nos variables
 
-## Reference
+Le scope est la portee d'une variable, portee geographique, c'est a dire ou la variable est visible dans le code.
+Les variables déclarées dans une :
+-  boucle ne peuvent être utilisées que dans cette boucle.
+-  fonction ne peuvent être utilisées que dans cette fonction.
 
-### Qu'est ce qu'une reference?
+---
 
-### Quand utiliser la reference de ma variable
+Exemple:
+```csharp
+int a = 3;
+{
+	int b = 5;
+	Console.WriteLine(a); // affichera 3
+	Console.WriteLine(b); // affichera 5
+}
+Console.WriteLine(b); // affichera une erreur
+```
 
-### Comment utiliser la reference de ma variable
+Ici, `b` est declare dans des accolades `{ }`, et n'est donc accessible qu'au sein de ces `{ }`. C'est pour ca que nous avons une erreur au second `Console.WriteLine(b)`
 
-## Tableau
+
+---
+
+### Variable global 
+
+Une variable global est une variable declaree en dehors de tout scope. Elle est donc accessible partout dans le code.
+Dans l'exemple ci dessus, `a` est une varible globale car elle est declarer en dehor de tout scope (`{ }`), et est accessible partout (toujours ci dessus nous avons acces a `a` dans le meme scope ou est declare `b`)
+
+
+
+---
+
+### Variable locale
+
+Une variable locale est une variable declaree dans un scope, et qui ne peut etre utilisee que dans ce scope.
+`b` est une variable dite locale a son scope.
+
+```csharp
+int a = 3;
+{
+	int b = 5;
+	Console.WriteLine(a); // affichera 3
+	Console.WriteLine(b); // affichera 5
+}
+Console.WriteLine(b); // affichera une erreur
+```
+
+---
+
+### Scope dans un scope
+
+---
+
+Exemple:
+
+```csharp
+{       // debut du premier scope 
+	int a = 3;
+	Console.WriteLine(a); 
+    {       // debut du scope 2 
+        int b = 4;
+        Console.WriteLine(a);
+        Console.WriteLine(b);
+        {       // debut du scope 3
+            int c = 6;
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+            Console.WriteLine(c);
+
+        }       // fin du scope 3
+                // variable c n'est plus accessible ici !! 
+    }   // fin du scope 2
+        // variable b n'est plus accessible ici !!
+}       // fin du premier scope 
+```
+
+---
+
+Une variable est definie dans son scope comme vu precedement et ce scope possedera toutes les entitees presente dans celle-ci. 
+C'est pour ca que le programme ci dessus fonctionne et affiche bien les resultats attendus
+
+---
+
+<!-- TODO : exercice pour le scope -->
+
+---
+
+## [] : Tableau
+
+---
+
+### Definition
+
+Un tableau est une collection d'entitees du meme type. Chaque entitee est accessible via un index.
+
+Un tableau peut etre visualise comme un coffre qui contient d'autre coffre.
+
+---
 
 ### Comment declarer un tableau
 
-### Comment initialiser un tableau
+
+Pour declarer un tableau, nous utiliserons la syntaxe suivante:
+
+```csharp
+type[] nomTableau = new type[taille];
+```
+
+2 nouveaux elements ici : 
+- `[]`
+- `new`  
+
+`taille` correspond au nombres d'element dans mon tableau
+
+---
+
+### Exemple de declaration de tableaux: 
+
+```csharp
+int[] tableau_int = new int[10]; // tableau de 10 entiers
+
+string[] tableau_string = new string[12]; // tableau de 12 string  
+
+`````
+
+---
+
+### Remplir un tableau
+
+Pour remplir un tableau, nous utiliserons la syntaxe suivante:
+
+```csharp
+nomTableau[index] = valeur;
+```
+
+Le premier index de mon tableau est 0.
+
+
+
+---
+
+### Exemple de remplissage de tableau:
+
+```csharp
+int[] tableau_int = new int[4]; // tableau de 4 entiers
+
+tableau_int[0] = 3; //index = 0, valeur = 3;
+tableau_int[1] = 5;
+tableau_int[2] = 7;
+tableau_int[3] = 9;
+```
+
+---
+
 
 ### Methode de base contenue dans les tableaux
 
@@ -497,6 +648,17 @@ Console.WriteLine(c); // affichera HelloWorld
 #### Type de retour
 
 #### Associer le retour d'une fonction a une variable
+
+
+## Reference
+
+### Qu'est ce qu'une reference?
+
+### Quand utiliser la reference de ma variable
+
+### Comment utiliser la reference de ma variable
+
+
 
 ### Librairie
 

@@ -1,10 +1,24 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
-int a = 1;
-int b = 3;
+int[] arr = new int[5];
 
-bool c = a > b;
+// fill the array with values
+for (int i = 0; i < arr.Length; i++)
+{
+    arr[i] = i;
+}
 
-Console.WriteLine(c);
+for (int i = 0; i < arr.Length; i++)
+{
+    Console.WriteLine(arr[i]);
+}
 
+Console.WriteLine(arr.Length);
+
+int[] arr2 = new int[] { 1, 2, 3, 4, 5 };
+// print all val
+for (int i = 0; i < arr2.Length; i++)
+{
+    Console.WriteLine(arr2[i]);
+}
