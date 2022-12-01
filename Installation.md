@@ -43,13 +43,13 @@ Telecharger .NET 6.0 : https://dotnet.microsoft.com/en-us/download
 
 ---
 
-![](src/vscode_barre_lateral.png)
+![](./Ressources/vscode_barre_lateral.png)
 
-![](src/vscode_extention_button.png)
+![](./Ressources/vscode_extention_button.png)
 
 ---
 
-![](src/vscode_csharp_plugin_installation.png)
+![](./Ressources/vscode_csharp_plugin_installation.png)
 
 ---
 
@@ -66,7 +66,7 @@ Cliquer sur Terminal dans la bare d'option de vscode, puis Nouveau terminal
 
 ---
 
-![](src/open_a_term.png)
+![](./Ressources/open_a_term.png)
 
 
 ---
@@ -80,7 +80,7 @@ Verifier que le retour vous donne la version 6.0.*
 
 ---
 
-![](src/dotnet--version.png)
+![](./Ressources/dotnet--version.png)
 
 ---
 
@@ -97,7 +97,7 @@ En premier lieu, creer un dossier sur le bureau,
 
 ---
 
-![](src/open_dir_vscode.png)
+![](./Ressources/open_dir_vscode.png)
 
 ---
 
@@ -106,10 +106,10 @@ Pour creer des fichiers ou dossier avec VSCode, rien de plus simple.
 Il suffit de cliquer sur les petites iconnes sur la droite du nom de dossier et le nommer: 
 
 
-![](src/new_file.png)
+![](./Ressources/new_file.png)
 
 ---
-![](src/new_dir.png)
+![](./Ressources/new_dir.png)
 
 ---
 
@@ -125,7 +125,7 @@ Il suffit de cliquer sur les petites iconnes sur la droite du nom de dossier et 
 
 - 1er option, utiliser Terminal en haut dans les options de VSCode entre Executer et Aide, puis Nouveau Terminal;
 
-![](src/open_a_term.png)
+![](./Ressources/open_a_term.png)
 
 ---
 
@@ -137,7 +137,7 @@ Il suffit de cliquer sur les petites iconnes sur la droite du nom de dossier et 
 - 3eme option,
 Pour ouvrir un terminal dans un sous-dossier, clic droit sur le nom du dossier et ouvrir dans le terminal integre
 
-![](src/termIntegre.png)
+![](./Ressources/termIntegre.png)
 
 
 ---

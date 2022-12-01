@@ -1,6 +1,15 @@
 ---
 marp: true
+paginate: true
+theme: gaia
+
+backgroundImage: url(./Ressources/Theme/Diapo.png)
+_backgroundImage: url(./Ressources/Theme/Title.png)
 ---
+
+<link href="./Ressources/Theme/CSS/theme.css" rel="stylesheet">
+
+<!-- _backgroundImage: url(./Ressources/Theme/Title.png) -->
 
 # Installation vscode, .NET et extension c#
 
@@ -13,7 +22,7 @@ marp: true
 - [Installation NET 6.0](#NetInstall)
 - [Installation c# Plugin pour VSCode](#CSharpInstall)
 - [Voir sa version de .NET](#net6)
-
+---
 ### [VSCode](#vscode)
 - [Ouvrir un dossier / Fichier ](#opendir)
 - [Creer un dossier / Fichier](#createdir)
@@ -43,12 +52,12 @@ Telecharger .NET 6.0 : https://dotnet.microsoft.com/en-us/download
 
 ---
 
-![](src/Untitled.png)
+![](./Ressources/Untitled.png)
 
 
 ---
 
-![](src/vscode_csharp_plugin_installation.png)
+![](./Ressources/vscode_csharp_plugin_installation.png)
 
 ---
 
@@ -65,7 +74,7 @@ Cliquer sur Terminal dans la bare d'option de vscode, puis Nouveau terminal
 
 ---
 
-![](src/open_a_term.png)
+![](./Ressources/open_a_term.png)
 
 
 ---
@@ -79,7 +88,7 @@ Verifier que le retour vous donne la version 6.0.*
 
 ---
 
-![](src/dotnet--version.png)
+![](./Ressources/dotnet--version.png)
 
 ---
 
@@ -96,7 +105,7 @@ En premier lieu, creer un dossier sur le bureau,
 
 ---
 
-![](src/open_dir_vscode.png)
+![](./Ressources/open_dir_vscode.png)
 
 ---
 
@@ -105,10 +114,10 @@ Pour creer des fichiers ou dossier avec VSCode, rien de plus simple.
 Il suffit de cliquer sur les petites iconnes sur la droite du nom de dossier et le nommer: 
 
 
-![](src/new_file.png)
+![](./Ressources/new_file.png)
 
 ---
-![](src/new_dir.png)
+![](./Ressources/new_dir.png)
 
 ---
 
@@ -124,7 +133,7 @@ Il suffit de cliquer sur les petites iconnes sur la droite du nom de dossier et 
 
 - 1er option, utiliser Terminal en haut dans les options de VSCode entre Executer et Aide, puis Nouveau Terminal;
 
-![](src/open_a_term.png)
+![](./Ressources/open_a_term.png)
 
 ---
 
@@ -136,7 +145,7 @@ Il suffit de cliquer sur les petites iconnes sur la droite du nom de dossier et 
 - 3eme option,
 Pour ouvrir un terminal dans un sous-dossier, clic droit sur le nom du dossier et ouvrir dans le terminal integre
 
-![](src/termIntegre.png)
+![](./Ressources/termIntegre.png)
 
 
 ---
@@ -144,6 +153,7 @@ Pour ouvrir un terminal dans un sous-dossier, clic droit sur le nom du dossier e
 
 # Organiser ses dossiers, l'architecture des Application .NET
 
+---
 ### Objectif : Creer son premier programme c# : HelloWord
 
 Architecture : Creer un dossier par exercice pour organiser ses programmes,
@@ -152,6 +162,7 @@ Architecture : Creer un dossier par exercice pour organiser ses programmes,
 
 Commande de creation de Programme c# :
 - Dans vscode : cliquer sur le dossier cicle (dossier ou va se trouver le programme), clic droit -> Ouvrir dans le terminal integre
+---
 - lancer dans le terminal
 
 objectif : Creer un dossier par exercice, lancer la commande dotnet new proet y creer un fichier par fonction, 

@@ -112,6 +112,7 @@ string car_brand;
 string brand_car;
 string car_name;
 ```
+ ---
 
 ### Exercice sur les variables
 
@@ -122,6 +123,7 @@ string car_name;
 
 5. Afficher la valeur de chaque variable avec la fonction `Console.WriteLine(nom_de_variable)`
 
+---
 ### Exercice solution
 
 ```csharp
@@ -136,21 +138,297 @@ Console.WriteLine(isAdult);
 Console.WriteLine(height);
 ```
 
+---
 ### Exercice sur le nommage des variables 
 
+1. Vous possedez un cafe et vous voulez automatiser la visualisation de certain chiffre. Pour cela vous demandez au server du jour de rentrer le nombre de cafe servit, la quantite en graine (en gramme) utilise, le nombre de client servit et le nom du server, pour un programme que vous avez confectionne. Creer des variable adapter a chaqu'une des ses informations et nommer judicieusement.
+---
+2. Bob, Richard et Mark sont pecheur sur le meme bateau. Ils font la competion du nombre de poisson peche et du poids total peche. Le capitain leur propose de creer un petit programme dans lequel chaqu'un rentrera leurs nom, suivit du nombre de poisson peche aujourd'hui ainsi que le poids total de leurs prise du jours. Creer deux variables pour chaqu'un de et nommez les.
+---
 
-## Operation
 
+---
 
 ### Lecture
 
+Une fois ma variable declare, elle pourra etre utilise tout au long de mon programme. Pour cela nous utiliserons son mon sans avoir a redefinir son type.
+
+---
+
 #### Comment utiliser ma variable
+
+Pour utiliser une variable, c'est a dire acceder a la valeur stocker dans celle-ci, il suffit de l'appeler par son nom.
+Pour autant, nous ne pouvons pas redefinir son type apres declaration.
+
+```csharp
+int nom_de_variable;
+
+nom_de_variable = 153;
+
+Console.WriteLine(nom_de_variable); // affichera 153
+// nom_de_variable = "bonjour"   --> erreur car "bonjour" est une string et non un int
+```
+
+---
 
 ### Attribution
 
+Pour affecter une valeur a une variable, nous utiliserons l'operateur `=`.
+Cet operateur permet d'affecter une valeur a une variable.
+
+---
+
 #### Comment associer une valeur a ma variable
 
+Il est possible de redefinir la valeur d'une variable en lui attribuant une nouvelle valeur.
+
+```csharp
+int nom_de_variable;
+
+nom_de_variable = 153;
+Console.WriteLine(nom_de_variable); // affichera 153
+
+nom_de_variable = 12;
+Console.WriteLine(nom_de_variable); // affichera 12
+```
+
+---
+
+## Les operateurs 
+
+Les operateurs sont des symboles qui permettent d'effectuer des operations sur des variables ou des valeurs.
+Nous avons vu precedement l'operateur d'assignation `=`
+pour associer une variable a une valeur.
+Mais il en existe pour faire des operation aritmetiques, pour comparer des variables, pour en incrementer et pour concatener.
+
+---
+
+## Les operations arithmetiques
+
+Il est possible d'effectuer des operations sur les variables.
+
+### Addition
+
+Pour additionner deux variables, nous utiliserons l'operateur `+`.
+
+```csharp
+int a = 3;
+int b = 5;
+
+int c = a + b;
+Console.WriteLine(c); // affichera 8
+```
+
+---
+
+### Soustraction
+
+Pour soustraire deux variables, nous utiliserons l'operateur `-`.
+
+```csharp
+int a = 3;
+int b = 5;
+
+int c = a - b;
+Console.WriteLine(c); // affichera -2
+```
+
+---
+
+### Multiplication
+
+Pour multiplier deux variables, nous utiliserons l'operateur `*`.
+
+```csharp
+int a = 3;
+int b = 5;
+
+int c = a * b;
+Console.WriteLine(c); // affichera 15
+```
+
+---
+
+### Division
+
+Pour diviser deux variables, nous utiliserons l'operateur `/`.
+
+```csharp
+int a = 3;
+int b = 5;
+
+int c = a / b;
+Console.WriteLine(c); // affichera 0
+```
+
+---
+
+### Modulo
+
+Pour calculer le reste d'une division entre deux variables, nous utiliserons l'operateur `%`.
+
+```csharp
+int a = 31;
+int b = 5;
+
+int c = a % b;
+Console.WriteLine(c); // affichera 1
+```
+
+---
+
+## Operations de comparaisons
+
+La comparaison de variable est au coeur des boucles logiques et conditionnelles, elle vous permettera de comparer deux variables. 
+Le retour d'une comparaison est une variable `bool` true ou false en fonction de la verite de comparaison.
+
+---
+
+
+### Egalite
+
+Pour comparer si deux variables sont egales, nous utiliserons l'operateur `==`.
+
+```csharp
+int a = 3;
+int b = 5;
+
+bool c = a == b;
+Console.WriteLine(c); // affichera false
+```
+
+---
+
+### Superieur
+
+Pour comparer si une variable est superieur a une autre, nous utiliserons l'operateur `>`.
+
+```csharp
+int a = 3;
+int b = 5;
+
+bool c = a > b;
+Console.WriteLine(c); // affichera false
+```
+
+---
+
+### Inferieur
+
+Pour comparer si une variable est inferieur a une autre, nous utiliserons l'operateur `<`.
+
+```csharp
+int a = 3;
+int b = 5;
+
+bool c = a < b;
+Console.WriteLine(c); // affichera true
+```
+
+---
+
+### Superieur ou egal
+
+Pour comparer si une variable est superieur ou egal a une autre, nous utiliserons l'operateur `>=`.
+
+```csharp
+int a = 3;
+int b = 5;
+
+bool c = a >= b;
+Console.WriteLine(c); // affichera false
+```
+
+---
+
+### Inferieur ou egal
+
+Pour comparer si une variable est inferieur ou egal a une autre, nous utiliserons l'operateur `<=`.
+
+```csharp
+int a = 3;
+int b = 5;
+
+bool c = a <= b;
+Console.WriteLine(c); // affichera true
+```
+
+---
+
+
+### Operateurs d'incrementation
+
+En informatique, l'incrémentation est l'opération qui consiste à ajouter 1 à un compteur.
+
+Pour incrementer une variable de 1, nous utiliserons l'operateur `++`.
+
+```csharp
+int a = 3;
+
+a++;
+Console.WriteLine(a); // affichera 4
+```
+
+---
+
+### Operateurs de decrementation
+
+L'opération inverse, la décrémentation, consiste à retirer 1 au compteur
+Pour decrementer une variable de 1, nous utiliserons l'operateur `--`.
+
+```csharp
+int a = 3;
+
+a--;
+Console.WriteLine(a); // affichera 2
+```
+
+---
+
+### Operateur incrementation de n
+
+
+Pour incrementer une variable de n, nous utiliserons l'operateur `+=`.
+
+```csharp
+int a = 3;
+
+a += 5;
+Console.WriteLine(a); // affichera 8
+```
+
+---
+
+### Operateur decrementation de n
+
+Pour decrementer une variable de n, nous utiliserons l'operateur `-=`.
+
+```csharp
+int a = 3;
+
+a -= 5;
+Console.WriteLine(a); // affichera -2
+```
+
+---
+
+### Operateurs de concatenation
+
+Pour concatener deux chaines de caracteres, nous utiliserons l'operateur `+`.
+
+```csharp
+string a = "Hello";
+string b = "World";
+
+string c = a + b;
+Console.WriteLine(c); // affichera HelloWorld
+```
+
+---
+
 ## Scope
+
+---
 
 ### Qu'est ce que le scope et en quoi impact-il nos variables
 
