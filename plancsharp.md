@@ -31,9 +31,8 @@ Elle est compose de 3 éléments :
 
 ## Déclaration d'une variable
 
-Pour declarer une variable on associer un type a un nom.
-Avant d'associer celui-ci a une valeur.
-Pour etre capable de bien associer une variable a une valeur, il faut deja comprendre les types,
+Pour déclarer une variable on associe un type à un nom, avant d'associer celui-ci a une valeur.
+Pour etre capable de bien associer une variable à une valeur, il faut déjà comprendre les types.
 
 ---
 
@@ -43,9 +42,9 @@ Pour etre capable de bien associer une variable a une valeur, il faut deja compr
 
 ## Qu'est-ce qu'un type ?
 
-Un type est une facon de classer les variables. Il exite plusieurs types de variables :
+Un type est une facon de classer les variables. Il existe plusieurs types de variables :
 * `int` : nombre entier
-* `float` : nombre a virgule
+* `float` : nombre à virgule
 * `string` : chaîne de caractères
 * `bool` : booléen (vrai ou faux)
 
@@ -57,41 +56,44 @@ Les types permettent de classer les variables, et de les utiliser plus facilemen
 
 Par exemple, si on a une variable de type `int`, on pourra l'utiliser pour stocker des nombres entiers. Si on a une variable de type `string`, on pourra l'utiliser pour stocker des chaînes de caractères.
 
-Si on demande a l'utilisateur d'entrer un texte, on va stocker cette valeur dans une variable de type `string` et non `int`.
+Si on demande à l'utilisateur d'entrer un texte, on va stocker cette valeur dans une variable de type `string` et non `int`.
 
-Et par exemple, on ne peut pas additionner une chaine de caractères avec un nombre.
+Et par exemple, on ne peut pas additionner une chaîne de caractères avec un nombre.
 
 ---
 
 ## Int
 
-Le type `int` est le type pour les nombres entiers. Un nombre entier est un nombre qui ne contient pas de virgule. Il peut aussi etre negatif.
+Le type `int` est le type pour les nombres entiers. Un nombre entier est un nombre qui ne contient pas de virgule. Il peut aussi être negatif.
 Exemple : `125`, `0`, `-12`
 
 ---
 
 ## Float
 
-Le type `float` est le type pour les nombres a virgule. Un nombre a virgule est un nombre qui contient une virgule. Il peut aussi etre negatif.
+Le type `float` est le type pour les nombres à virgule. 
+Un nombre à virgule est un nombre qui contient une virgule. Il peut aussi être negatif.
 Exemple : `1.025`, `0.0`, `-12.256`
 
 ---
 
 ## String
 
-Le type `string` est le type pour les chaines de caractères. Une chaine de caractères est une suite de caractères qui forme un mot ou une phrase.
+Le type `string` est le type pour les chaînes de caractères. 
+Une chaine de caractères est une suite de caractères qui forme un mot ou une phrase.
 Exemple : `"hello world"`, `"hello"`, `"world"`
 
 ---
 
 ## Bool
 
-Le type `bool` est le type pour les valeurs booléennes. Une valeur booléenne est une valeur qui est vrai ou fausse.
+Le type `bool` est le type pour les valeurs booléennes. 
+Une valeur booléenne est une valeur qui est vraie ou fausse.
 Exemple : `true`, `false`
 
 ---
 
-## Exemple de declaration
+## Exemple de déclaration
 
 ```csharp
 int nom_de_variable = 12;
@@ -102,13 +104,13 @@ bool name_true_false = true;
 
 Il faut bien comprendre ici que le nom des variables est libre de choix.
 
-Mais pour autant il ne faut pas mettre n'importe quoi, car celle ci participe a la clarete de votre code.
+Mais pour autant il ne faut pas mettre n'importe quoi, car celle ci participe à la clarté de votre code.
 
 ---
 
-#### Importance de choisir ses nom de variable
+#### Importance de choisir ses noms de variable
 
-Vous demandez a un utilisateur de mettre le nom d'une voiture en input
+Vous demandez à un utilisateur de mettre le nom d'une voiture en input
 
 Vous stockerez cette valeur dans une string et vous la nommerez en rapport avec l'objet de votre demande, 
  
@@ -149,9 +151,11 @@ Console.WriteLine(height);
 ---
 ### Exercice sur le nommage des variables 
 
-1. Vous possedez un cafe et vous voulez automatiser la visualisation de certain chiffre. Pour cela vous demandez au server du jour de rentrer le nombre de cafe servit, la quantite en graine (en gramme) utilise, le nombre de client servit et le nom du server, pour un programme que vous avez confectionne. Creer des variable adapter a chaqu'une des ses informations et nommer judicieusement.
+1. Vous possedez un café et vous voulez automatiser la visualisation de certains chiffres. Pour cela vous demandez au serveur du jour de rentrer le nombre de café servit, la quantité en graine (en gramme) utilise, le nombre de client servit et le nom du serveur, pour un programme que vous avez confectionné. 
+Créez des variables adaptées à chacune de ses informations et nommez judicieusement.
 ---
-2. Bob, Richard et Mark sont pecheur sur le meme bateau. Ils font la competion du nombre de poisson peche et du poids total peche. Le capitain leur propose de creer un petit programme dans lequel chaqu'un rentrera leurs nom, suivit du nombre de poisson peche aujourd'hui ainsi que le poids total de leurs prise du jours. Creer deux variables pour chaqu'un de et nommez les.
+2. Bob, Richard et Mark sont pêcheurs sur le même bâteau. Ils font la compétition du nombre de poisson péchés et du poids total péchés. Le capitaine leur propose de créer un petit programme dans lequel chacun rentrera leurs noms, suivit du nombre de poisson péchés aujourd'hui ainsi que le poids total de leurs prise du jour. 
+Créer deux variables pour chacun d'eux et nommez les.
 ---
 
 
@@ -159,14 +163,14 @@ Console.WriteLine(height);
 
 ### Lecture
 
-Une fois ma variable declare, elle pourra etre utilise tout au long de mon programme. Pour cela nous utiliserons son mon sans avoir a redefinir son type.
+Une fois ma variable déclaré, elle pourra être utilisée tout au long de mon programme. Pour cela nous utiliserons son nom sans avoir à redefinir son type.
 
 ---
 
 #### Comment utiliser ma variable
 
-Pour utiliser une variable, c'est a dire acceder a la valeur stocker dans celle-ci, il suffit de l'appeler par son nom.
-Pour autant, nous ne pouvons pas redefinir son type apres declaration.
+Pour utiliser une variable, c'est à dire accéder à la valeur stockée dans celle-ci, il suffit de l'appeler par son nom.
+Pour autant, nous ne pouvons pas reéefinir son type après déclaration.
 
 ```csharp
 int nom_de_variable;
@@ -181,14 +185,14 @@ Console.WriteLine(nom_de_variable); // affichera 153
 
 ### Attribution
 
-Pour affecter une valeur a une variable, nous utiliserons l'operateur `=`.
-Cet operateur permet d'affecter une valeur a une variable.
+Pour affecter une valeur à une variable, nous utiliserons l'opérateur `=`.
+Cet opérateur permet d'affecter une valeur à une variable.
 
 ---
 
-#### Comment associer une valeur a ma variable
+#### Comment associer une valeur à ma variable
 
-Il est possible de redefinir la valeur d'une variable en lui attribuant une nouvelle valeur.
+Il est possible de redéfinir la valeur d'une variable en lui attribuant une nouvelle valeur.
 
 ```csharp
 int nom_de_variable;
@@ -202,22 +206,22 @@ Console.WriteLine(nom_de_variable); // affichera 12
 
 ---
 
-## Les operateurs 
+## Les opérateurs 
 
-Les operateurs sont des symboles qui permettent d'effectuer des operations sur des variables ou des valeurs.
-Nous avons vu precedement l'operateur d'assignation `=`
-pour associer une variable a une valeur.
-Mais il en existe pour faire des operation aritmetiques, pour comparer des variables, pour en incrementer et pour concatener.
+Les opérateurs sont des symboles qui permettent d'effectuer des opérations sur des variables ou des valeurs.
+Nous avons vu précedemment l'opérateur d'assignation `=`
+pour associer une variable à une valeur.
+Mais il en existe pour faire des opérations arithmétiques, pour comparer des variables, pour en incrémenter et pour concaténer.
 
 ---
 
-## Les operations arithmetiques
+## Les opérations arithmétiques
 
-Il est possible d'effectuer des operations sur les variables.
+Il est possible d'effectuer des opérations sur les variables.
 
 ### Addition
 
-Pour additionner deux variables, nous utiliserons l'operateur `+`.
+Pour additionner deux variables, nous utiliserons l'opérateur `+`.
 
 ```csharp
 int a = 3;
@@ -231,7 +235,7 @@ Console.WriteLine(c); // affichera 8
 
 ### Soustraction
 
-Pour soustraire deux variables, nous utiliserons l'operateur `-`.
+Pour soustraire deux variables, nous utiliserons l'opérateur `-`.
 
 ```csharp
 int a = 3;
@@ -245,7 +249,7 @@ Console.WriteLine(c); // affichera -2
 
 ### Multiplication
 
-Pour multiplier deux variables, nous utiliserons l'operateur `*`.
+Pour multiplier deux variables, nous utiliserons l'opérateur `*`.
 
 ```csharp
 int a = 3;
@@ -259,7 +263,7 @@ Console.WriteLine(c); // affichera 15
 
 ### Division
 
-Pour diviser deux variables, nous utiliserons l'operateur `/`.
+Pour diviser deux variables, nous utiliserons l'opérateur `/`.
 
 ```csharp
 int a = 3;
@@ -273,7 +277,7 @@ Console.WriteLine(c); // affichera 0
 
 ### Modulo
 
-Pour calculer le reste d'une division entre deux variables, nous utiliserons l'operateur `%`.
+Pour calculer le reste d'une division entre deux variables, nous utiliserons l'opérateur `%`.
 
 ```csharp
 int a = 31;
@@ -285,18 +289,18 @@ Console.WriteLine(c); // affichera 1
 
 ---
 
-## Operations de comparaisons
+## Opérations de comparaisons
 
 La comparaison de variable est au coeur des boucles logiques et conditionnelles, elle vous permettera de comparer deux variables. 
 
-Le retour d'une comparaison est une variable `bool` true ou false en fonction de la verite de comparaison.
+Le retour d'une comparaison est une variable `bool` true ou false en fonction de la vérité de comparaison.
 
 ---
 
 
 ### Egalite
 
-Pour comparer si deux variables sont egales, nous utiliserons l'operateur `==`.
+Pour comparer si deux variables sont égales, nous utiliserons l'opérateur `==`.
 
 ```csharp
 int a = 3;
@@ -310,7 +314,7 @@ Console.WriteLine(c); // affichera false
 
 ### Superieur
 
-Pour comparer si une variable est superieur a une autre, nous utiliserons l'operateur `>`.
+Pour comparer si une variable est supérieure à une autre, nous utiliserons l'opérateur `>`.
 
 ```csharp
 int a = 3;
@@ -324,7 +328,7 @@ Console.WriteLine(c); // affichera false
 
 ### Inferieur
 
-Pour comparer si une variable est inferieur a une autre, nous utiliserons l'operateur `<`.
+Pour comparer si une variable est inférieur à une autre, nous utiliserons l'opérateur `<`.
 
 ```csharp
 int a = 3;
@@ -336,9 +340,9 @@ Console.WriteLine(c); // affichera true
 
 ---
 
-### Superieur ou egal
+### Supérieur ou égal
 
-Pour comparer si une variable est superieur ou egal a une autre, nous utiliserons l'operateur `>=`.
+Pour comparer si une variable est supérieure ou égal ea une autre, nous utiliserons l'operateur `>=`.
 
 ```csharp
 int a = 3;
@@ -350,9 +354,9 @@ Console.WriteLine(c); // affichera false
 
 ---
 
-### Inferieur ou egal
+### Inférieur ou égal
 
-Pour comparer si une variable est inferieur ou egal a une autre, nous utiliserons l'operateur `<=`.
+Pour comparer si une variable est inférieure ou égale à une autre, nous utiliserons l'opérateur `<=`.
 
 ```csharp
 int a = 3;
@@ -365,11 +369,11 @@ Console.WriteLine(c); // affichera true
 ---
 
 
-### Operateurs d'incrementation
+### Opérateurs d'incrémentation
 
 En informatique, l'incrémentation est l'opération qui consiste à ajouter 1 à un compteur.
 
-Pour incrementer une variable de 1, nous utiliserons l'operateur `++`.
+Pour incrémenter une variable de 1, nous utiliserons l'opérateur `++`.
 
 ```csharp
 int a = 3;
@@ -383,7 +387,7 @@ Console.WriteLine(a); // affichera 4
 ### Operateurs de decrementation
 
 L'opération inverse, la décrémentation, consiste à retirer 1 au compteur
-Pour decrementer une variable de 1, nous utiliserons l'operateur `--`.
+Pour décrementer une variable de 1, nous utiliserons l'opérateur `--`.
 
 ```csharp
 int a = 3;
@@ -394,10 +398,10 @@ Console.WriteLine(a); // affichera 2
 
 ---
 
-### Operateur incrementation de n
+### Opérateur incrémentation de n
 
 
-Pour incrementer une variable de n, nous utiliserons l'operateur `+=`.
+Pour incrémenter une variable de n, nous utiliserons l'opérateur `+=`.
 
 ```csharp
 int a = 3;
@@ -408,9 +412,9 @@ Console.WriteLine(a); // affichera 8
 
 ---
 
-### Operateur decrementation de n
+### Opérateur décrementation de n
 
-Pour decrementer une variable de n, nous utiliserons l'operateur `-=`.
+Pour décrementer une variable de n, nous utiliserons l'opérateur `-=`.
 
 ```csharp
 int a = 3;
@@ -421,9 +425,9 @@ Console.WriteLine(a); // affichera -2
 
 ---
 
-### Operateurs de concatenation
+### Opérateurs de concatenation
 
-Pour concatener deux chaines de caracteres, nous utiliserons l'operateur `+`.
+Pour concatener deux chaînes de caractères, nous utiliserons l'opérateur `+`.
 
 ```csharp
 string a = "Hello";
@@ -440,7 +444,7 @@ Console.WriteLine(c); // affichera HelloWorld
 
 ## Scope
 
-Le Scope  | La portee
+Le Scope  | La portée
 
 
 {
@@ -449,9 +453,9 @@ Le Scope  | La portee
 
 ---
 
-### Qu'est ce que le scope et en quoi impact-il nos variables
+### Qu'est-ce que le scope et en quoi impacte-t-il nos variables
 
-Le scope est la portee d'une variable, portee geographique, c'est a dire ou la variable est visible dans le code.
+Le scope est la portée d'une variable, portée geographique : c'est là où la variable est visible dans le code.
 Les variables déclarées dans une :
 -  boucle ne peuvent être utilisées que dans cette boucle.
 -  fonction ne peuvent être utilisées que dans cette fonction.
@@ -469,16 +473,16 @@ int a = 3;
 Console.WriteLine(b); // affichera une erreur
 ```
 
-Ici, `b` est declare dans des accolades `{ }`, et n'est donc accessible qu'au sein de ces `{ }`. C'est pour ca que nous avons une erreur au second `Console.WriteLine(b)`
+Ici, `b` est déclaré dans des accolades `{ }`, et n'est donc accessible qu'au sein de ces `{ }`. C'est pour ca que nous avons une erreur au second `Console.WriteLine(b)`
 
 
 ---
 
-### Variable global 
+### Variable globale 
 
-Une variable global est une variable declaree en dehors de tout scope. Elle est donc accessible partout dans le code.
+Une variable globale est une variable declarée en dehors de tout scope. Elle est donc accessible partout dans le code.
 
-Dans l'exemple ci dessus, `a` est une varible globale car elle est declarer en dehor de tout scope (`{ }`), et est accessible partout (toujours ci dessus nous avons acces a `a` dans le meme scope ou est declare `b`)
+Dans l'exemple ci dessus, `a` est une varible globale car elle est déclarée en dehors de tout scope (`{ }`), et est accessible partout (toujours ci dessus nous avons accès à `a` dans le même scope où est déclaré `b`)
 
 
 
@@ -486,9 +490,9 @@ Dans l'exemple ci dessus, `a` est une varible globale car elle est declarer en d
 
 ### Variable locale
 
-Une variable locale est une variable declaree dans un scope, et qui ne peut etre utilisee que dans ce scope.
+Une variable locale est une variable declarée dans un scope, et qui ne peut etre utilisée que dans ce scope.
 
-`b` est une variable dite locale a son scope.
+`b` est une variable dite locale à son scope.
 
 ```csharp
 int a = 3;
@@ -531,9 +535,9 @@ Exemple:
 
 ---
 
-Une variable est definie dans son scope comme vu precedement et ce scope possedera toutes les entitees presente dans celle-ci. 
+Une variable est définie dans son scope comme vu précédemment et ce scope possèdera toutes les entitées présente dans celle-ci. 
 
-C'est pour ca que le programme ci dessus fonctionne et affiche bien les resultats attendus
+C'est pour ca que le programme ci dessus fonctionne et affiche bien les résultats attendus
 
 ---
 
@@ -547,30 +551,30 @@ C'est pour ca que le programme ci dessus fonctionne et affiche bien les resultat
 
 ### Definition
 
-Un tableau est une collection d'entitees du meme type. Chaque entitee est accessible via un index.
+Un tableau est une collection d'entitées du même type. Chaque entité est accessible via un index.
 
-Un tableau peut etre visualise comme un coffre qui contient d'autre coffre.
+Un tableau peut etre visualisé comme un coffre qui contient d'autre coffre.
 
 ---
 
-### Comment declarer un tableau
+### Comment déclarer un tableau
 
 
-Pour declarer un tableau, nous utiliserons la syntaxe suivante:
+Pour déclarer un tableau, nous utiliserons la syntaxe suivante:
 
 ```csharp
 type[] nomTableau = new type[taille];
 ```
 
-2 nouveaux elements ici : 
+2 nouveaux éléments ici : 
 - `[]`
 - `new`  
 
-`taille` correspond au nombres d'element dans mon tableau
+`taille` correspond au nombre d'éléments dans mon tableau
 
 ---
 
-### Exemple de declaration de tableaux: 
+### Exemple de déclaration de tableaux: 
 
 ```csharp
 int[] tableau_int = new int[10]; // tableau de 10 entiers
@@ -608,7 +612,7 @@ tableau_int[3] = 9;
 
 ---
 
-### Initialisation lors de la declaration 
+### Initialisation lors de la déclaration 
 Vous pouvez éviter l’expression `new` et le type de tableau lorsque vous initialisez un tableau lors de la déclaration, comme indiqué dans le code suivant.
 
 ```csharp
@@ -618,9 +622,9 @@ string[] weekDays2 = { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
 
 ---
 
-### Acceder a la valeur dans le tableau
+### Accéder à la valeur dans le tableau
 
-Pour acceder a la valeur dans le tableau, nous utiliserons la syntaxe suivante:
+Pour accéder à la valeur dans le tableau, nous utiliserons la syntaxe suivante:
 
 ```csharp
 nomTableau[index]
@@ -630,7 +634,7 @@ nomTableau[index]
 
 ---
 
-### Exemple d'acces a la valeur dans un tableau:
+### Exemple d'accès à la valeur dans un tableau:
 
 ```csharp
 int[] tableau_int = new int[4]; // tableau de 4 entiers
@@ -649,13 +653,13 @@ Console.WriteLine(tableau_int[3]); // affichera 9
 ---
 
 
-### Methode de base contenue dans les tableaux
+### Méthode de base contenue dans les tableaux
 
-Un tableau en C# est un object qui possede des certaines propriete deja integre.
-Pour les tableaux, la principal et la plus utilise est :
+Un tableau en C# est un object qui possède des certaines propriétés déjà intégré.
+Pour les tableaux, la principale et la plus utilisée est :
 - `Length` : retourne la taille du tableau
 
-Principalement utilise pour parcourir votre tableau.
+Principalement utilisée pour parcourir votre tableau.
 
 ---
 
@@ -683,29 +687,29 @@ Console.WriteLine(tableau_int.Length); // affichera 4
 
 Une condition est une expression qui retourne un `booleen (true ou false)`.
 
-En fonction de la valeur de la condition, un bloc de code sera execute (`true`) ou non (`false`).
+En fonction de la valeur de la condition, un bloc de code sera éxécuté (`true`) ou non (`false`).
 
-Tout les operateurs de Comparaison peuvent etre utilise dans les condition 
+Tous les opérateurs de Comparaison peuvent être utilisé dans les conditions
 
 <!-- TODO link vers les operateur de comparaison -->
 
 ---
 
-| Operateur de comparaison| Signification |
+| Opérateur de comparaison| Signification |
 |-----------|---------------|
-| ==        | egal a        |
-| !=        | different de  |
-| >         | superieur a   |
-| >=        | superieur ou egal a |
-| <         | inferieur a   |
-| <=        | inferieur ou egal a |
+| ==        | égal à        |
+| !=        | différent de  |
+| >         | supérieur à   |
+| >=        | supérieur ou égal à |
+| <         | inférieur à   |
+| <=        | inférieur ou égal à |
 
 
 ---
 
 #### If
 
-La condition la plus simple est le `if` qui permet d'executer un bloc de code si la condition est vrai.
+La condition la plus simple est le `if` qui permet d'éxécuter un bloc de code si la condition est vraie.
 
 ```csharp
 if (condition 1)
@@ -718,16 +722,16 @@ if (condition 1)
 
 #### Else
 
-La condition `else` permet d'executer un bloc de code si la condition est fausse.
+La condition `else` permet d'éxécuter un bloc de code si la condition est fausse.
 
 ```csharp
 if (condition 1)
 {
-	// code a executer si la condition 1 est vrai
+	// code à éxécuter si la condition 1 est vraie
 }
 else
 {
-	// sinon, code a executer si la condition 1 est fausse
+	// sinon, code à éxécuter si la condition 1 est fausse
 }
 ```
 
@@ -735,20 +739,20 @@ else
 
 #### Else if
 
-La condition `else if` permet d'executer un bloc de code si la condition est fausse et que l'on souhaite verifier une autre condition.
+La condition `else if` permet d'éxécuter un bloc de code si la condition est fausse et que l'on souhaite vérifier une autre condition.
 
 ```csharp
 if (condition 1)
 {
-	// code a executer si la condition 1 est vrai
+	// code à éxécuter si la condition 1 est vraie
 }
 else if (condition 2)
 {
-	// sinon, code a executer si la condition 1 est fausse et que condition 2 est vrai
+	// sinon, code à éxécuter si la condition 1 est fausse et que condition 2 est vraie
 }
 else
 {
-	// code a executer si la condition 1 est fausse et que condition 2 est fausse
+	// code à éxécuter si la condition 1 est fausse et que condition 2 est fausse
 }
 ```
 
@@ -762,15 +766,15 @@ int b = 10;
 
 if (a > b)
 {
-	Console.WriteLine("a est superieur a b");
+	Console.WriteLine("a est supérieur à b");
 }
 else if (a < b)
 {
-	Console.WriteLine("a est inferieur a b");
+	Console.WriteLine("a est inférieur à b");
 }
 else
 {
-	Console.WriteLine("a est egal a b");
+	Console.WriteLine("a est égal à b");
 }
 ```
 
@@ -782,13 +786,13 @@ else
 int ton_age = mettre ton age;
 int nombre_denfant = mettre ton nombre d enfant;
 
-1 Creer une condition pour verifier si tu es majeur.
-Elle affichera \(avec Console.WriteLine\) si tu es majeur ou si tu es mineurs
+1 Créer une condition pour vérifier si tu es majeur.
+Elle affichera \(avec Console.WriteLine\) si tu es majeur, ou si tu es mineur
 
-2 Creer une ou plusieur conditions pour verifier si \:
+2 Créer une ou plusieurs conditions pour vérifier si \:
 tu n as pas d enfant,       // afficher je n'est pas d'enfant 
 3 tu as moins de 3 enfants mais tu as des enfants,   // afficher j'ai nbr d enfant
-4 tu as 4 ou moins mais plus que 2,   // j'ai plus que 2 enfant mais ce n'est pas une famille nombreuse
+4 tu as 4 ou moins mais plus que 2,   // j'ai plus que 2 enfants mais ce n'est pas une famille nombreuse
 5 tu as plus que 4 enfants, // j'ai une famille nombreuse
 
 ```
@@ -816,7 +820,7 @@ if (nombre_denfant == 0) // condition 1
 }
 else if (nombre_denfant < 3) // si condition 1 fausse, condition 2
 {
-    // autre possibilite, nbr_denfant <= 2
+    // autre possibilité, nbr_denfant <= 2
 	Console.WriteLine("J'ai " + nombre_denfant + " enfant");
 }
 
@@ -828,9 +832,9 @@ else if (nombre_denfant < 3) // si condition 1 fausse, condition 2
 
 else if (nombre_denfant <= 4) // condition 3
 {
-	Console.WriteLine("J'ai plus que 2 enfant mais ce n'est pas une famille nombreuse");
+	Console.WriteLine("J'ai plus que 2 enfants mais ce n'est pas une famille nombreuse");
 }
-else // condition 4 , si aucun des conditons etaient bonne
+else // condition 4 , si aucune des conditons n'étaient bonne
 {
 	Console.WriteLine("J'ai une famille nombreuse");
 }
@@ -838,11 +842,11 @@ else // condition 4 , si aucun des conditons etaient bonne
 
 --- 
 
-#### Operateur Booleen
+#### Opérateur Booleen
 
-Les operateurs booleen permettent de combiner des conditions.
+Les opérateurs booleen permettent de combiner des conditions.
 
-| Operateur | Signification |
+| Opérateur | Signification |
 |-----------|---------------|
 | &&        | ET            |
 | \|\|      | OU            |
@@ -850,23 +854,23 @@ Les operateurs booleen permettent de combiner des conditions.
 
 ##### ET
 
-L'operateur ET permet d'executer un bloc de code si les deux conditions sont vrais.
+L'opérateur ET permet d'executer un bloc de code si les deux conditions sont vraies.
 
 ```csharp
 if (condition 1 && condition 2)
 {
-	// code a executer si les deux conditions sont vrais
+	// code à executer si les deux conditions sont vraies
 }
 ```
 
 ##### OU
 
-L'operateur OU permet d'executer un bloc de code si une des deux conditions sont vrais.
+L'opérateur OU permet d'executer un bloc de code si une des deux conditions sont vraies.
 
 ```csharp
 if (condition 1 || condition 2)
 {
-	// code a executer si une des deux conditions sont vrais
+	// code à executer si une des deux conditions sont vraies
 }
 ```
 
@@ -874,18 +878,18 @@ if (condition 1 || condition 2)
 
 ##### NON
 
-L'operateur NON permet d'inverser la valeur de la condition.
+L'opérateur NON permet d'inverser la valeur de la condition.
 
 ```csharp
 if (!condition)
 {
-	// code a executer si la condition est fausse
+	// code à executer si la condition est fausse
 }
 ```
 ---
 
 ### Exercice 
-<!-- Creer un exercice ou on devrat utiliser if avec des operateurs booleen && || -->
+<!-- Creer un exercice où on devra utiliser if avec des operateurs booleen && || -->
 
 
 ```csharp
@@ -894,14 +898,14 @@ int nbr_couvert = 30;
 int nbr_personne = 12;
 
 1 Creer une condition qui verifie : 
-	- tout les mondes aura 2 couvert au moins 
+	- tout le monde aura 2 couverts au moins 
 		ET
-	- tout le mondes aura 1 pizza au moins
+	- tout le monde aura 1 pizza au moins
 
 2 Creer une condition qui verifie : 
-	- tout les mondes aura 2 couvert au moins 
+	- tout le monde aura 2 couvert au moins 
 		OU
-	- tout le mondes aura 1 pizza au moins
+	- tout le monde aura 1 pizza au moins
 
 
 
@@ -911,12 +915,12 @@ int nbr_personne = 12;
 
 ---
 
-##### Priorite des parenthese
+##### Priorité des parenthèses
 
-Les operateurs booleen sont evalue de gauche a droite dans une condition. 
+Les opérateurs booleen sont evalués de gauche à droite dans une condition. 
 
-Les parenthese `()` fonctionne en informatique comme en mathematique.
-La priorite de la condition se dirige dans la parenthese en 1er.
+Les parenthèses `()` fonctionne en informatique comme en mathématiques
+La priorité de la condition se dirige dans la parenthèse en 1er.
 
 
 ---
@@ -951,18 +955,18 @@ La priorite de la condition se dirige dans la parenthese en 1er.
 
 ### Exercice 
 
-Reprendre l'exercice precedent en ajoutant la derniere condition :
+Reprendre l'exercice précédent en ajoutant la dernière condition :
 
 ```csharp
 
-3 Creer une condition qui verifie : 
-	- tout le monde aura 2 couvert au moins 
+3 Créer une condition qui vérifie : 
+	- tout le monde aura 2 couverts au moins 
 		ET
 	- tout le monde aura 1 pizza au moins
 		ET
-			- il y a plus de 20 couvert
+			- il y a plus de 20 couverts
 				OU	
-			- il y a plus de 10 personne
+			- il y a plus de 10 personnes
 ```
 
 
@@ -979,23 +983,23 @@ Une boucle permet d'executer plusieurs fois un bloc de code, tant que la conditi
 
 #### Boucle while
 
-La boucle while permet de repeter un bloc de code tant qu'une condition est vrais.
+La boucle while permet de répéter un bloc de code tant qu'une condition est vraie.
 
 ```csharp
 while (condition) // tant que la condition est vraie
 {
-	// bloc de code a repeter
+	// bloc de code à repéter
 }
 ```
 
 ---
 
 ### Exemple pratique 
-Les boucles `while` sont tres pratique pour par exemples iterer sur un tableau.
+Les boucles `while` sont très pratique pour, un exemple: itérer sur un tableau.
 
 Rappel, 
-Un tableau possede plusieur elements d'un meme type;
-Un tableau possede une fonction qui permet de connaitre sa longeur : `.Lenght`;
+Un tableau possède plusieurs éléments d'un même type;
+Un tableau possède une fonction qui permet de connaître sa longueur : `.Lenght`;
 
 ---
 
@@ -1858,6 +1862,8 @@ Elle ne sera pas accessible via une variable; mais par le type.
 Console.WriteLine(Personne.nbPersonne); // affichera 0
 Personne Bob = new Personne("Bob");
 Console.WriteLine(Personne.nbPersonne); // affichera 1
+Personne Lea = new Personne("Lea");
+Console.WriteLine(Personne.nbPersonne); // affichera 2
 // Console.WriteLine(Bob.nbPersonne); // affichera error
 // car la static n'est pas accessible via Bob
 
@@ -1884,25 +1890,363 @@ public class Personne {
 
 # Heritage
 
+
 ---
 
 ### Qu'es ce que l'heritage
 
+L'heritage permet de reutiliser du code en creant des classes enfant a partir de classes parent.
+
+La classe enfant va pouvoir utiliser les variables et les methodes de la classe parent.
+
+Elle peut aussi redefinir les methodes,
+
+Ajouter de nouvelle variable,
+
+La classe parent peut imposer la definition de methode dans la classe enfant.
+
+---
+
+### A quoi ca sert,
+
+Vous voulez creer un jeu video de combat et pour cela vous avez besoin de : 
+- Personnages
+
+Vous voulez avoir plusieur classe de Personnages :
+- Magicien
+- Gueurier
+- Ninja
+
+---
+
+Chaqu'une d'elle aura des propriete de bases telque: 
+- nom
+- pv (point de vie)
+- agilite (% d'esquive des attaques subit)
+- degat (attaque)
+
+Maintenant vous pouriez me dire  : " pourquoi ne pas faire une seul classe avec plusieur methode, on pourrait trouver un moyen ?"
+
+---
+
+Daccord, apres la realisation de ma classe unique je  veux rajouter un personnage soigner et un envouteur;
+
+Je devrais changer des implementation dans la classe Personnage et faire attention a ne pas casser les implementations des autre personnages deja creer.
+
+De plus il sera plus dur d'implementer des methodes uniques pour certain personnage.
+
+---
+
+### Avantage
+- Scalabilite du code
+- Separtion et clarte
+- Pas de multiple definition des variables et methodes
+- Imposer des variables et des methodes
 
 
+---
 
+### Comment ca marche
 
+Lorsque l'on herite d'une classe, les attributs et les methodes de la classe parent sont accesible dans la classe enfant.
+
+Mots clefs : `:` + nom de classe parent lors de la declaration de la classe fils.
+
+Ici `Magicien` (`fils`) herite de `Personnage` ( `parent`)
+
+De ce faite, Magicien aura tout les attributs et methode de Personnage
+
+```csharp
+class Magicien : Personnage {} // class Magicien herite de class Personnage
+```
+
+---
 
 ## Constructeur parent
 
-## Heritage simple
+Si la classe parent a un constructeur, il FAUT l'appeler dans le constructeur de la classe enfant.
+Mot clef : `: base`
+
+```csharp
+class Magicien : Personnage {
+    public Magicien(string c_nom) : base(c_nom) { // va appeler le constructeur 
+	// de Personnage(string c_nom)
+
+        // code
+
+    }
+}
+```
+
+--- 
+
+
+## Exemple 
+
+```csharp
+class Personnage {
+    public string nom;
+    public int pv;
+    public int agilite;
+    public int degat;
+
+    public Personnage(string c_nom) {
+        nom = c_nom;
+        pv = 100;
+        agilite = 10;
+        degat = 10;
+    }
+
+	public void presentation() {
+		Console.WriteLine("Je suis " + nom + " et j'ai " + pv + " points de vie.");
+	}	
+}
+
+```
+
+---
+
+
+```csharp
+class Magicien : Personnage {
+    public int mana;
+
+    public Magicien(string c_nom) : base(c_nom) { 
+        mana = 100;
+    }
+}
+
+class Gueurier : Personnage {
+    public int armure;
+
+    public Gueurier(string c_nom) : base(c_nom) { 
+        armure = 10;
+		pv = 250;
+		agilite = 5;
+    }
+}
+
+class Ninja : Personnage {
+    public int esquive;
+
+    public Ninja(string c_nom) : base(c_nom) {  
+        esquive = 100;
+		agilite = 34;
+		pv = 90;
+    }
+}
+```
+
+---
 
 ## Protected
 
+Un attribut ou une methode protected est accessible dans la classe parent et dans la classe enfant.
+
+Contrairement a un attribut ou methode private qui ne peut etre accessible dans une classes herite.
+
+Exemple :
+
+---
+
+```csharp
+class A {
+	protected int nbr_protected = 2;
+	private int nbr_private = 3;
+
+	public A() {
+		Console.WriteLine(nbr_protected); // affichera 2
+		Console.WriteLine(nbr_private); // affichera 3
+	}
+}
+
+class B : A {
+	public B() : base() {
+		Console.WriteLine(nbr_protected); // affichera 2
+		Console.WriteLine(nbr_private); // error ---> attribut private d'une autre class 
+
+	}
+}
+
+
+```
+
+
+---
+
+
+
 ## Classes abstraites
 
+Une classe abstraite est une classe qui ne peut pas etre instancier.
+
+Elle sert de base a d'autre classe qui vont l'heriter.
+
+Une classe abstraite peut contenir des attributs et des methodes.
+
+Exemple : On ne veux pas de personnage qui n'appartienne a aucune classes deriver de personnage
+
+---
+
+### Exemple
+
+```csharp
+abstract class Personnage {
+    public string nom;
+    public int pv;
+    public int agilite;
+    public int degat;
+
+    public Personnage(string c_nom) {
+        nom = c_nom;
+        pv = 100;
+        agilite = 10;
+        degat = 10;
+    }
+
+	public void presentation() {
+		Console.WriteLine("Je suis " + nom + " et j'ai " + pv + " points de vie.");
+	}	
+
+	abstract public void attaquer();
+}
+```
+
+---
+
+```csharp
+class Magicien : Personnage {
+    public int mana;
+
+    public Magicien(string c_nom) : base(c_nom) { 
+        mana = 100;
+    }
+
+	public override void attaquer() {
+		// code
+	}
+}
+
+class Gueurier : Personnage {
+    public int armure;
+
+    public Gueurier(string c_nom) : base(c_nom) { 
+        armure = 10;
+		pv = 250;
+		agilite = 5;
+    }
+
+	public override void attaquer() {
+		// code
+	}
+}
+
+class Ninja : Personnage {
+    public int esquive;
+
+    public Ninja(string c_nom) : base(c_nom) {  
+        esquive = 100;
+		agilite = 34;
+		pv = 90;
+    }
+
+	public override void attaquer() {
+		// code
+	}
+}
+```
+
+---
+
 ### Override
+
+Une methode peut aussi etre abstract.
+
+Cela veut dire que la methode doit etre redefini dans la classe enfant.
+
+Si une methode est abstract dans la classe parent et n'est pas defini dans la classes enfant, le code ne fonctionnera pas.
+
+
+Mot clef : `override`
+
+---
 
 ## Interfaces
 
-### Override
+ne interface est une classe abstraite qui ne contient que des methodes abstraites.
+
+Une interface peut etre implementer dans une classe.
+
+Dans ta classe abstraite il peut y avoir des fonctions/méthodes avec une implémentation. 
+
+Tu peux également avoir des variables, alors que les interfaces ne peuvent avoir que des propriétés.
+
+Tu ne peux hériter que d'une seule classe abstraite, alors qu'avec les interfaces non.
+
+Exemple : 
+
+---
+
+
+### Exemple
+
+```csharp
+interface IDeplacer {
+	public void deplacer();
+}
+
+interface IAttaquer {
+	public void attaquer();
+}
+
+
+```
+
+---
+
+```csharp
+
+abstract class Personnage {
+    public string nom;
+    public int pv;
+    public int agilite;
+    public int degat;
+
+    public Personnage(string c_nom) {
+        nom = c_nom;
+        pv = 100;
+        agilite = 10;
+        degat = 10;
+    }
+
+	public void presentation() {
+		Console.WriteLine("Je suis " + nom + " et j'ai " + pv + " points de vie.");
+	}	
+
+}
+
+```
+
+---
+
+```csharp
+
+class Ninja : Personnage, IDeplacer, IAttaquer {
+    public int esquive;
+
+    public Ninja(string c_nom) : base(c_nom) {  
+        esquive = 100;
+		agilite = 34;
+		pv = 90;
+    }
+
+	public void attaquer() {
+		// code
+	}
+
+	public void deplacer() {
+		// code
+	}
+}
+
+```
