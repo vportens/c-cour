@@ -1,4 +1,4 @@
-TP : Jeu de gestion, je creer mon village
+ # TP : Jeu de gestion, je creer mon village
 
 
 ---
@@ -34,7 +34,7 @@ Ces ressources ne seront accessible que par des getter respectif :
 
 Rajoutez des fonctions pour utiliser vos ressources avec les prototipe suivants : 
 -  `public void useStone(int nbr)`
-- `public void useWood(int nbr)`)
+- `public void useWood(int nbr)`
 nbr est le nombre de ressources utilisees
 
 !! attention on ne pourra pas utiliser plus de ressource que l'on en a. 
@@ -51,6 +51,7 @@ Attribut qui sera instancier dans le constructeur de `Village` en appelans le co
 Rajoutez des getters 
 - `getWood()`
 - `getStone()`
+
 qui appelerons, `getWood()`,`getStone()` de myRessources.
 
 

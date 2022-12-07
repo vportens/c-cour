@@ -13,10 +13,6 @@ myVillage.cutWood(6);
 Console.WriteLine(myVillage.getStone());
 Console.WriteLine(myVillage.getWood());
 myVillage.cutWood(5);
-myVillage.cutWood(5);
-Console.WriteLine(myVillage.getStone());
-Console.WriteLine(myVillage.getWood());
-myVillage.cutWood(5);
 
 
 
@@ -68,6 +64,19 @@ public class Village{
         listHouse = newListHouse;
     }
 
+
+    public void buildHouse(int nbrHouse) {
+        if (nbrHouse * House.wood_needed <= getWood() && nbrHouse * House.stone_needed <= getStone()) {
+            myRessources.useWood(nbrHouse * House.wood_needed);
+            myRessources.useStone(nbrHouse * House.stone_needed);
+            for (int i = 0; i < nbrHouse; i++) {
+                addHouse();
+            }
+        }
+        else {
+            Console.WriteLine("Il n'y a pas assez de ressources");
+        }
+    }
 
 
     public void mineStone(int nbrVillageois) {

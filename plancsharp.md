@@ -29,10 +29,17 @@ Elle est compose de 3 éléments :
 
 ---
 
+
 ## Déclaration d'une variable
 
 Pour déclarer une variable on associe un type à un nom, avant d'associer celui-ci a une valeur.
 Pour etre capable de bien associer une variable à une valeur, il faut déjà comprendre les types.
+
+Exemple : 
+string name = "Victor"
+string etant le type
+name etant ma variable
+Victor etant la valeur a laquelle ma variable est associer
 
 ---
 
@@ -52,11 +59,14 @@ Un type est une facon de classer les variables. Il existe plusieurs types de var
 
 ## Pourquoi utiliser des types ?
 <!-- TODO : sperater la slide -->
+
 Les types permettent de classer les variables, et de les utiliser plus facilement. 
 
 Par exemple, si on a une variable de type `int`, on pourra l'utiliser pour stocker des nombres entiers. Si on a une variable de type `string`, on pourra l'utiliser pour stocker des chaînes de caractères.
 
 Si on demande à l'utilisateur d'entrer un texte, on va stocker cette valeur dans une variable de type `string` et non `int`.
+
+---
 
 Et par exemple, on ne peut pas additionner une chaîne de caractères avec un nombre.
 
@@ -74,6 +84,7 @@ Exemple : `125`, `0`, `-12`
 Le type `float` est le type pour les nombres à virgule. 
 Un nombre à virgule est un nombre qui contient une virgule. Il peut aussi être negatif.
 Exemple : `1.025`, `0.0`, `-12.256`
+
 
 ---
 
@@ -97,7 +108,7 @@ Exemple : `true`, `false`
 
 ```csharp
 int nom_de_variable = 12;
-float variable_floating_point = 2.0;
+float variable_floating_point = 2.0f;
 string what_ever_name = "bonjour les amiches";
 bool name_true_false = true;
 ```
@@ -140,7 +151,7 @@ string car_name;
 int age = 20;
 string name = "Jean";
 bool isAdult = true;
-float height = 1.83;
+float height = 1.83f;
 
 Console.WriteLine(age);
 Console.WriteLine(name);
@@ -289,6 +300,42 @@ Console.WriteLine(c); // affichera 1
 
 ---
 
+<!-- TODO : exercie operatation de variable basique -->
+
+Exercice :
+
+1. Creer une variable pizza (entier) qui sera egale a 5.
+2. Creer une variable part_de_pizza (entier) qui egale a 6.
+3. Creer une variable nbr_part_de_pizza qui sera egale au nombre de pizza multiplier par part_de_pizza.
+
+---
+
+Vous etes 9 Personnes.
+
+4. Creer une variable nbr_personne qui sera egale a 9.
+5. Creer une variable part_de_pizza_par_personne, qui sera egale au mon de part_de_pizza diviser par le nbr_personne.
+6. Creer une variable part_de_pizza_restante qui sera egale au nombre de par restante apres distribution (utiliser modulo)
+
+---
+
+Solution : 
+
+```csharp
+int pizza = 5;
+
+int part_de_pizza = 6;
+
+int nbr_part_de_pizza = pizza * part_de_pizza;
+
+int nbr_personne = 9;
+
+int part_de_pizza_par_personne = nbr_part_de_pizza / nbr_personne;
+
+int part_de_pizza_restante = nbr_part_de_pizza % nbr_personne;
+```
+
+---
+
 ## Opérations de comparaisons
 
 La comparaison de variable est au coeur des boucles logiques et conditionnelles, elle vous permettera de comparer deux variables. 
@@ -368,6 +415,56 @@ Console.WriteLine(c); // affichera true
 
 ---
 
+<!-- TODO : exercice de comparaison de base -->
+Exercice : 
+
+Creer 4 variables, `a`, `b`, `c` et `d` de type `float` telque :
+- a = 1.5
+- b = 5
+- c = 1.5
+- e = 0.5
+
+---
+
+En utilisant l'operateur `>` et 2 des 4 variables (`a`, `b`, `c`, `d`);
+Creer 2 variable de type `bool` telque : 
+- f = true
+- g = false
+
+
+En utilisant l'operateur `<` et 2 des 4 variables (`a`, `b`, `c`, `d`);
+Creer 2 variable de type `bool` telque : 
+- h = true
+- i = false
+
+---
+
+En utilisant l'operateur `==` et 2 des 4 variables (`a`, `b`, `c`, `d`);
+Creer 2 variable de type `bool` telque : 
+- j = true
+- k = false
+
+---
+
+Solution :
+
+```csharp
+float a = 1.5f;
+float b = 5f;
+float c = 1.5f;
+float d = 0.5f;
+
+bool f = b > a;
+bool g = d > a;
+
+bool h = c < b;
+bool i = c < d;
+
+bool j = a == c;
+bool k = d == c;
+```
+
+---
 
 ### Opérateurs d'incrémentation
 
@@ -425,6 +522,46 @@ Console.WriteLine(a); // affichera -2
 
 ---
 
+<!-- TODO : exercice incrementation de base -->
+Creer deux variables `int`:  `salaire` et `solde_banque`
+
+- Initialiser salaire a 1280 et solde_banque a 329.
+- Incrementer solde_banque de salaire
+
+Creer deux nouvelles variable `int` : `depense_course` et `loyer`
+- Initialiser depense_course a 450
+- Initialiser loyer a 600
+- Decrementer solde_banque de depense_course 
+- Decrementer solde_banque de loyer
+
+---
+
+Vous avez une augmentation de salaire de 150
+- Incrementer votre salaire de 150
+
+---
+
+Solution : 
+
+```csharp
+int salaire = 1280;
+int solde_banque = 329;
+
+solde_banque += salaire;
+
+int depense_course = 450;
+int loyer = 600;
+
+solde_banque -= depense_course;
+solde_banque -= loyer;
+
+salaire += 150;
+
+```
+
+
+---
+
 ### Opérateurs de concatenation
 
 Pour concatener deux chaînes de caractères, nous utiliserons l'opérateur `+`.
@@ -440,6 +577,8 @@ Console.WriteLine(c); // affichera HelloWorld
 ---
 
 <!-- fin de cour faire tp pratique  -->
+
+
 ---
 
 ## Scope
@@ -542,6 +681,39 @@ C'est pour ca que le programme ci dessus fonctionne et affiche bien les résulta
 ---
 
 <!-- TODO : exercice pour le scope -->
+Creer 3 variable globals telque :
+- `jean` une string initialiser a "Jean"
+- `ville` une string initialiser a "Paris"
+- `annee` un int initialiser a 1998
+
+Creer un scope dans lequel sera instancier :
+- `annee2` un int egale a 1999
+- `lea` une string egale a "Lea"
+
+Creer un second scope dans le premier et instacier :
+- `fact_check` un boleen qui verifiera `annee < anne2`;
+- une string `copie_ville` qui sera egale a `ville`
+
+---
+
+Solution : 
+
+```csharp
+string jean = "Jean";
+string ville = "Paris";
+int annee = 1998;
+{
+	int annee2 = 1999;
+	string lea = "Lea";
+	{
+		bool fact_check = annee < annee2;
+		string copie_ville = ville;
+	}
+}
+
+```
+
+<!-- TODO : 2nd exercice -->
 
 ---
 
@@ -622,6 +794,35 @@ string[] weekDays2 = { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
 
 ---
 
+<!-- TODO : exercice declaration tableau basique -->
+Exercice : 
+
+- Creer un tableau de string `mois` pour y mettre tout les mois de l'annee et instancier le.
+
+---
+
+Solution : 
+
+```csharp
+string[] mois = {"janvier", "fevrier", "mars", "avril", "mai", "juin", "juillet", "aout", "septembre", "octobre", "novembre", "decembre" };
+
+--- reponce alternative
+
+string[] mois = new string [12];
+mois[0] = "janvier";
+.
+.
+.
+mois[11] = "decembre";
+
+```
+
+---
+
+
+
+---
+
 ### Accéder à la valeur dans le tableau
 
 Pour accéder à la valeur dans le tableau, nous utiliserons la syntaxe suivante:
@@ -653,6 +854,31 @@ Console.WriteLine(tableau_int[3]); // affichera 9
 ---
 
 
+Avec l'exercice precedent, 
+Creer un tableau de string `mois_avec_e`, qui contiendra tout les mois qui possede un `e` dans leurs nom.
+Celui-ci sera initialiser seulement a l'aide d'index et le tableau de `mois`.
+
+---
+
+Solution :
+
+```csharp
+string[] mois = {"janvier", "fevrier", "mars", "avril", "mai", "juin", "juillet", "aout", "septembre", "octobre", "novembre", "decembre" };
+
+string[] mois_avec_e = new string [7];
+mois_avec_e[0] = mois[0];
+mois_avec_e[1] = mois[1];
+mois_avec_e[2] = mois[6];
+mois_avec_e[3] = mois[8];
+mois_avec_e[4] = mois[9];
+mois_avec_e[5] = mois[10];
+mois_avec_e[6] = mois[11];
+
+
+```
+
+---
+
 ### Méthode de base contenue dans les tableaux
 
 Un tableau en C# est un object qui possède des certaines propriétés déjà intégré.
@@ -678,6 +904,9 @@ Console.WriteLine(tableau_int.Length); // affichera 4
 
 ---
 
+<!-- TODO : exercice acceder a des valeur dans des tableaux -->
+
+---
 
 ## Logique
 
@@ -720,6 +949,37 @@ if (condition 1)
 
 ---
 
+<!-- TODO : exercice sur if -->
+
+Exercice : 
+Creer deux variable `int` solde_camille et solde_bob
+initialiser les telque : 
+solde_camille = 1111;
+solde_bob = 289; 
+Creer une condition `if` si solde_camille est superieur au solde_bob et y mettre le code suivant
+```csharp
+Console.WriteLine("camille a un solde superieur a bob " + solde_camille);
+```
+
+Executer le code.
+
+
+---
+
+Solution :
+```csharp
+int solde_camille = 1111;
+int solde_bob = 289;
+
+if (solde_camille > solde_bob) {
+
+Console.WriteLine("camille a un solde superieur a bob " + solde_camille);
+}
+
+```
+
+---
+
 #### Else
 
 La condition `else` permet d'éxécuter un bloc de code si la condition est fausse.
@@ -734,6 +994,23 @@ else
 	// sinon, code à éxécuter si la condition 1 est fausse
 }
 ```
+
+---
+
+<!-- TODO : exercice sur if else -->
+Exercice : 
+Reprendre le code precedent et ajouter au scope de else :  
+```csharp
+Console.WriteLine("Bob a un solde superieur a bob " + solde_bob);
+```
+
+
+Executer le code.
+
+Changer le solde de bob a 2222;
+
+Executer le code.
+Quelle que chose a change dans l'affichage du terminal?
 
 ---
 
@@ -777,6 +1054,16 @@ else
 	Console.WriteLine("a est égal à b");
 }
 ```
+
+Executer le code.
+
+---
+
+Changer `int a = 120`;
+Executer le code.
+Changer `int a = 120`;
+Changer `int b = 120`;
+Executer le code.
 
 ---
 
@@ -852,6 +1139,8 @@ Les opérateurs booleen permettent de combiner des conditions.
 | \|\|      | OU            |
 | !         | NON           |
 
+---
+
 ##### ET
 
 L'opérateur ET permet d'executer un bloc de code si les deux conditions sont vraies.
@@ -863,6 +1152,12 @@ if (condition 1 && condition 2)
 }
 ```
 
+---
+
+<!-- TODO : exercice condition avec Et -->
+
+--- 
+
 ##### OU
 
 L'opérateur OU permet d'executer un bloc de code si une des deux conditions sont vraies.
@@ -873,6 +1168,10 @@ if (condition 1 || condition 2)
 	// code à executer si une des deux conditions sont vraies
 }
 ```
+
+---
+
+<!-- TODO : exercice condition avec ou -->
 
 ---
 
@@ -889,7 +1188,7 @@ if (!condition)
 ---
 
 ### Exercice 
-<!-- Creer un exercice où on devra utiliser if avec des operateurs booleen && || -->
+<!-- TODO : Creer un exercice où on devra utiliser if avec des operateurs booleen && || -->
 
 
 ```csharp
@@ -1019,6 +1318,9 @@ A partir de maintenant nous utiliserons une convention de code pour nommer une v
 
 ---
 
+<!-- TODO : exercice avec boucle simple while -->
+
+---
 
 #### Boucle foreach
 
@@ -1054,7 +1356,7 @@ foreach (int elems in arr)
 On vois bien ici, contrairement a la boucle `while`, `elems` s'incremente automatiquement a la fin du bloc conditionnelle.
 
 ---
-<!-- TODO : exercice  -->
+<!-- TODO : exercice  boucle foreach -->
 --- 
 
 ## function
@@ -1117,6 +1419,8 @@ void fonction1()
 }
 ```
 
+---
+<!-- TODO : exercice fonction simple sans parametre -->
 ---
 
 ### Parameteres passe
@@ -1192,6 +1496,10 @@ void function1(int a, int b = 2)
 
 ---
 
+<!-- TODO : exercice fonction avec parametre et parametre par default -->
+
+---
+
 ### Retour fonction 
 
 Une fonction peut renvoyer un resultat, ce resultat est un `type` de variable.
@@ -1231,6 +1539,10 @@ int square(int x)
 
 ---
 
+<!-- TODO : exercice faire une fonction avec un retour -->
+
+---
+
 #### Associer le retour d'une fonction a une variable
 
 On peut associer le retour d'une fonction a une variable.
@@ -1253,7 +1565,7 @@ int square(int x)
 
 ---
 
-<!-- TODO : exercice plus simple -->
+<!-- TODO : exercice faire une fonction avec un retour et l'associer a une variable -->
 
 ---
 
@@ -1351,6 +1663,12 @@ Ecrire une fonction `is_Billi` qui prend en parametre une reference sur string, 
 La fonction verifie si l'argument est egale a `Billi` est renvera `true` si vrai.
 Sinon modifier l'argument pour le transforme en `Billi` et renvoyer false.
 
+
+---
+
+<!-- TODO : exercicie sur les references -->
+
+
 ---
 
 ### Librairie
@@ -1446,6 +1764,10 @@ if (dictionnaire.ContainsKey(1)) {
 - `Clear` : permet de vider le dictionnaire
 - `ContainsKey` : permet de verifier si une clef existe
 - `ContainsValue` : permet de verifier si une valeur existe
+
+---
+
+<!-- TODO : petit exercice avec les dictionnaires -->
 
 ---
 
@@ -1578,6 +1900,10 @@ public class Car{
 
 ---
 
+<!-- TODO : exercicie decalration de class avec des attributs public et priver -->
+
+---
+
 ### Encapsulation 
 
 L'encapsulation c'est le faite de donner ou non acces aux attributs a l'utilisateur.
@@ -1633,6 +1959,11 @@ public class Car{
 	}
 }
 ```
+
+---
+
+<!-- TODO : faire un exercice sur les getter -->
+
 ---
 
 ### Utilisation set
@@ -1653,6 +1984,15 @@ public class Car{
 }
 ```
 
+
+---
+
+
+<!-- TODO : faire un exercice sur les setter -->
+
+---
+
+<!-- TODO : faire un exercice sur les getter et setter -->
 
 ---
 
@@ -1680,6 +2020,7 @@ public class Personne {
 ```
 
 --- 
+
 ### Methode avec des Parametres
 
 Une methode peut prendre des parametres, tout comme une fonction.
@@ -1694,6 +2035,10 @@ public class Personne {
 	}
 }
 ```
+
+---
+
+<!-- TODO : Exercice sur creation de classes avec quelque methode -->
 
 ---
 
@@ -1720,6 +2065,10 @@ public string Presentation(string nom, int age) { // overload de la methode pres
 ```
  
 --- 
+
+<!-- TODO : exercice sur l'overload de methode -->
+
+---
 
 ## Constructeur
 
@@ -1805,6 +2154,9 @@ public class Personne {
 
 Maintenant vous pouvez creer une variable de type Personne en la nommant comme vous le souhaitez sans avoir a toucher au code dans la classe.
 
+---
+
+<!-- TODO : exercice une classe avec deux constructeur un parametrique et sans parametre -->
 
 ---
 
@@ -1845,6 +2197,9 @@ public class Personne {
 
 
 ---
+<!-- TODO : exercice overload de constructeur parametrique -->
+
+---
 
 ### Static
 
@@ -1882,9 +2237,7 @@ public class Personne {
 
 ---
 
-<!-- EXERCICE -->
-<!-- TODO : resumer de la day  -->
-<!-- fin du jour -->
+<!-- TODO : exercice class avec un static -->
 
 --- 
 

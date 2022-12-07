@@ -4,20 +4,31 @@ using System;
 Village myVillage = new Village("Victor le createur");
 Console.WriteLine(myVillage.getName());
 
-myVillage.cutWood(50);
+myVillage.cutWood(2);
+myVillage.mineStone(2);
+myVillage.cutWood(4);
+myVillage.mineStone(4);
 
-Console.WriteLine(myVillage.getStone());
 Console.WriteLine(myVillage.getWood());
+Console.WriteLine(myVillage.getStone());
 
-myVillage.cutWood(6);
-Console.WriteLine(myVillage.getStone());
-Console.WriteLine(myVillage.getWood());
-myVillage.cutWood(5);
-myVillage.cutWood(5);
-Console.WriteLine(myVillage.getStone());
-Console.WriteLine(myVillage.getWood());
-myVillage.cutWood(5);
+myVillage.buildHouse(2);
+Console.WriteLine(myVillage.listHouse.Length);
+Console.WriteLine(myVillage.villageois);
 
+myVillage.cutWood(15);
+myVillage.mineStone(15);
+Console.WriteLine(myVillage.getWood());
+Console.WriteLine(myVillage.getStone());
+myVillage.buildHouse(4);
+/*
+myVillage.cutWood(13);
+myVillage.mineStone(13);
+myVillage.cutWood(16);
+myVillage.mineStone(16);
+Console.WriteLine(myVillage.getWood());
+Console.WriteLine(myVillage.getStone());
+*/
 
 
 
@@ -100,6 +111,19 @@ public class Village{
         }
         else {
             Console.WriteLine("Il n'y a pas assez de villageois");
+        }
+    }
+
+    public void buildHouse(int nbrHouse) {
+        if (House.wood_needed * nbrHouse <= getWood() && House.stone_needed * nbrHouse <= getStone()) {
+            myRessources.useWood(House.wood_needed * nbrHouse);
+            myRessources.useStone(House.stone_needed * nbrHouse);
+            for (int i = 0; i < nbrHouse; i++) {
+                addHouse();
+            }
+        }
+        else {
+            Console.WriteLine("Il n'y a pas assez de ressources");
         }
     }
 

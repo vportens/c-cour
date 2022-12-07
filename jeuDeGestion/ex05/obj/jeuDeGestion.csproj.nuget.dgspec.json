@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/laclide/Desktop/c-cour/jeuDeGestion/ex04/jeuDeGestion.csproj": {}
+    "/Users/laclide/Desktop/c-cour/jeuDeGestion/ex05/jeuDeGestion.csproj": {}
   },
   "projects": {
-    "/Users/laclide/Desktop/c-cour/jeuDeGestion/ex04/jeuDeGestion.csproj": {
+    "/Users/laclide/Desktop/c-cour/jeuDeGestion/ex05/jeuDeGestion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/laclide/Desktop/c-cour/jeuDeGestion/ex04/jeuDeGestion.csproj",
+        "projectUniqueName": "/Users/laclide/Desktop/c-cour/jeuDeGestion/ex05/jeuDeGestion.csproj",
         "projectName": "jeuDeGestion",
-        "projectPath": "/Users/laclide/Desktop/c-cour/jeuDeGestion/ex04/jeuDeGestion.csproj",
+        "projectPath": "/Users/laclide/Desktop/c-cour/jeuDeGestion/ex05/jeuDeGestion.csproj",
         "packagesPath": "/Users/laclide/.nuget/packages/",
-        "outputPath": "/Users/laclide/Desktop/c-cour/jeuDeGestion/ex04/obj/",
+        "outputPath": "/Users/laclide/Desktop/c-cour/jeuDeGestion/ex05/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/laclide/.nuget/NuGet/NuGet.Config"

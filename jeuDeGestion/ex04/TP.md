@@ -269,3 +269,5 @@ Console.WriteLine(myVillage.getStone()); // afficher 0
 Console.WriteLine(myVillage.getWood()); // afficher 55
 myVillage.cutWood(5); // affichera Il n'y a pas assez de ressource
 ```
+
+

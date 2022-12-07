@@ -56,7 +56,7 @@ qui appelerons, `getWood()`,`getStone()` de myRessources.
 
 
 
-EXERCICE 01 : What is a kingdom without subject ?
+# EXERCICE 01 : What is a kingdom without subject ?
 
 Creer un fichier House.cs
 Dans lequel vous creerez une classe public House
@@ -93,7 +93,7 @@ N'oubliez pas de rajouter le nombre de villageois disponible dans la chefHome au
 
 
 
-Exercice 2 : One house is not suffisant for a village
+# Exercice 2 : One house is not suffisant for a village
 
 Dans votre class Village, 
 Creer un attribut `listHouse` qui sera une un tableau de maison public, 
@@ -269,3 +269,75 @@ Console.WriteLine(myVillage.getStone()); // afficher 0
 Console.WriteLine(myVillage.getWood()); // afficher 55
 myVillage.cutWood(5); // affichera Il n'y a pas assez de ressource
 ```
+
+
+# Exercice 5 : From a village to a kingdom
+
+Du bois,
+De la pierre,
+Maintenant la population dois s'agrandir.
+
+Vous avez tout pour produire des ressources a l'infinie,
+vous avez meme creer une methode pour ajouter des maison a votre village.
+Maintenant passons de la theorie a la pratique et mettons la mains a la bourse.
+
+Creer une methode pour pour construire des maisons :
+- nom de la methode `buildHouse`
+- parametre `int` , qui representera le nombre de maison que vous voulez construire.
+
+Evidement ces maisons ne sont pas gratuites. 
+
+
+tester son code : 
+
+```csharp
+Village myVillage = new Village("Victor le createur");
+Console.WriteLine(myVillage.getName());
+
+myVillage.cutWood(2);
+myVillage.mineStone(2);
+myVillage.cutWood(4);
+myVillage.mineStone(4);
+
+Console.WriteLine(myVillage.getWood()); // affiche 58
+Console.WriteLine(myVillage.getStone()); // affiche 46
+
+myVillage.buildHouse(2);
+Console.WriteLine(myVillage.listHouse.Length); // affiche 3
+Console.WriteLine(myVillage.villageois); // affiche 30
+
+myVillage.cutWood(10);
+myVillage.mineStone(10);
+myVillage.cutWood(13);
+myVillage.mineStone(13);
+myVillage.cutWood(16);
+myVillage.mineStone(16);
+Console.WriteLine(myVillage.getWood()); // affiche 364
+Console.WriteLine(myVillage.getStone()); // affiche 274
+
+```
+
+test2 :
+```csharp
+Village myVillage = new Village("Victor le createur");
+Console.WriteLine(myVillage.getName());
+
+myVillage.cutWood(2);
+myVillage.mineStone(2);
+myVillage.cutWood(4);
+myVillage.mineStone(4);
+
+Console.WriteLine(myVillage.getWood()); // affiche 58
+Console.WriteLine(myVillage.getStone()); // affiche 46
+
+myVillage.buildHouse(2);
+Console.WriteLine(myVillage.listHouse.Length); // affiche 3
+Console.WriteLine(myVillage.villageois); // affiche 30
+
+myVillage.cutWood(15);
+myVillage.mineStone(15); // affiche Il n'y a pas assez de ressources
+Console.WriteLine(myVillage.getWood()) // affiche 187
+Console.WriteLine(myVillage.getStone()); // affiche 10
+myVillage.buildHouse(4); // affiche Il n'y a pas assez de ressources
+```
+
