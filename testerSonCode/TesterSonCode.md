@@ -1,14 +1,25 @@
 ---
 marp: true
+paginate: true
+theme: gaia
+
+backgroundImage: url(./Ressource/Theme/Diapo.png)
+_backgroundImage: url(./Ressource/Theme/Title.png)
 
 ---
+
+<link href="./Ressource/Theme/CSS/theme.css" rel="stylesheet">
+
+
 # TesterSonCode
 
+ 
 ---
 
 # Quel sont les besoin d'un developpeur
 
 ---
+
 
 ## Introduction 
 Lorsque l'on demande un produit a un developpeur, celui ci doit s'assurer de rendre un travail fonctionnel.
@@ -172,7 +183,6 @@ Refactor : Vous refactorisez votre code pour le rendre plus lisible et plus main
 ## Test unitaire
 
 Soumettre une partie de code à un test
-
 Il permet la mise en place d'un contrat entre le développeur et le client.
 
 Ou le client peut :
@@ -185,77 +195,474 @@ Ou le client peut :
 ---
 
 
-## Soumettre une partie du code a des tests unitaire
+# Soumettre une partie du code a des tests unitaire
+
+---
 
 
-## Le test unitaire pour le client
 ## Exemple de test
+
+Demande du client : "Je veux que la fonction `add` retourne la somme de deux nombres"
+
+```csharp
+public class Test {
+	public void testAdd() {
+		Calculatrice calculatrice = new Calculatrice();
+		int resultat = calculatrice.add(1, 2);
+		Console.WriteLine("resultat         = " + resultat);
+		Console.WriteLine("resultat attendu = 3");
+	}
+}
+```
+
+---
 
 # Problematique de test
 
+---
+
 ## Lisibilite des resultats
-## Complexite des tests
+
+Faire des Console.WriteLine n'est pas de plus lisible quand on a 200 tests a fait et a comparer.
+
+Trouver l'erreur puis la remonter pour voir le probleme...
+
+---
+
+
 ## Maintenance des tests
+
+Quand on a un grand nombre de test, il devient difficile de les maintenir.
+
+Et de les faire passer.
+
+---
+
 ## Repetition des tests
 
-# Une solution : Xunit
+Il faut repeter les tests a chaque fois que l'on fait une modification.
+
+Si on en oublie, on peut avoir un code qui ne fonctionne pas.
+
+---
+
+# Une solution : Xunit, automatiser ses tests
+
+---
+
 ## Gain de temps
+
+Avec Xunit vous pourrez automatiser vos tests,
+
+Voir directements ce qui fail, 
+
+Lorsque vous aurez bien maitrise l'outils de creation de test, un gain de temps est garantie.
+
+---
+
 ## Gain de productivite
+
+Vos test ce font sur un autre dossier, qui ira instancier vos classes. 
+
+Cela laissera place net a votre code.
+Pour mettre tout vos tests au meme endroit.
+
+Une modification de classe / methode;
+Relancer la batterie de test tout en gardant quelque chose de lisible.
+
+---
+
 ## Gain de qualite
+
+Si vous etez rigoureux dans vos tests, cela ne rendra votre code que plus qualitatif.
+
+---
+
 ## Gain de maintenabilite
 
+Xunit est disponible sur toutes les versions de .net
+Passez donc d'une version a l'autre et vos tests seront toujours compatible.
+
+---
+
 # Qu'est ce que Xunit
+
+---
+
 ## Dotnet et Xunit
+
+Xunit est disponible directement avec .Net
+Donc pas de paquet a installer.
+
+---
+
 ## Extension VSCode pour Xunit
 
+Une extension VSCode est disponible pour plus de visibilite : 
+
+`.NET Core Test Explorer`
+
+Elle montrera avec plus de simplicite les tests qui echoue.
+
+---
+
 # Pourquoi utiliser Xunit?
+
+---
+
 ## Xunit est simple d'utilisation
+
+```
+Si j'avais 6 heures pour abattre un arbre, je passerai les 4 premières à affuter ma hache. Abraham Lincoln
+```
+
+Xunit est tres simple d'utilisation,
+Seul la mise en place requiere de connaitre quelque commande,
+
+Et une bonne architecture de vos dossiers pour faciliter la suite.
+
+---
+
 ## Tres populaire
-## Scalable sur toutes les versions de dotnet et tout les environnements de travail
+
+Si vous etes perdu, avez quelque oublie dans le futur,
+Xunit reste tres populaire, il est tres facile de retrouver sur internet des tutoriels, ou les commandes.
+
+Donc pas de soucis a ce faire.
+
+---
+
+---
 
 # Installation de Xunit
-## Xunit deja present avec dotnet
+
+---
+
+# Xunit deja present avec dotnet
+
+---
 
 # Installaton exentension VSCode
 
-# Creer un fichier de test
+Nom de l'extension : 
+
+```.NET Core Test Explorer```
+
+Installer l'extension dans VScode (rappel voir pdf Installation VSCode)
+
+![](./Ressource/extensionVSCode.png)
+
+---
+
+# Architecture / premier pas  avec un tester 
+
+---
+
+## A quoi resemble l'architecture type
+
+```txt
+/dossier-de-travail
+    dossier-de-travail.sln
+    /Class
+        Class.cs
+        Class.csproj
+    /Class.Tests
+        Class_test_methode_A.cs
+        ClassTests.csproj
+
+```
+
+---
+
+## Mise en place
+
+Ici nous construirons l'exemple suivant avec : 
+- Une classe `PrimeService` qui nous permettera de verifier si un nombre est premier ou non. 
+
+
+Ouvrir un terminal et rentrer la commande suivante : 
+`dotnet new sln -o dossier-de-travail`
+
+![](./Ressource/dotnet-sln-global.png)
+
+---
+
+Vous avez creer `dossier-de-travail` avec le fichie `.sln`
+Ouvrir un terminal a l'interieur du dossier.
+
+Et y rentrer la commande : `dotnet new classlib -o PrimeService`
+
+![](./Ressource/Class-dotnet-dir.png)
+
+---
+
+Renommer `Class1.cs` en `PrimeService.cs`
+
+(clic droit sur Class1.cs --> rename )
+
+Remplacer le code dans `PrimeService.cs` avec : 
+
+```csharp
+using System;
+
+namespace Prime.Services
+{
+    public class PrimeService
+    {
+        public bool IsPrime(int candidate)
+        {
+            throw new NotImplementedException("Not implemented.");
+        }
+    }
+}
+
+```
+
+---
+
+Toujours dans le dossier `dossier-de-travail`
+
+Entre dans le terminal : 
+`dotnet sln add ./PrimeService/PrimeService.csproj`
+
+![](./Ressource/dotnet-sln-sync.png)
+
+---
+
+Maintenant on va creer le dossier de test,
+Entre dans le terminal : 
+`dotnet new xunit -o PrimeService.Tests`
+
+![](./Ressource/dotnet-test-dir.png)
+
+---
+
+Entre dans le terminal : 
+`dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj`
+
+![](./Ressource/dotnet-sln-test-sync.png)
+
+---
+
+Et pour finir, la commande qui va lier les 2 classes (classe de test et la classe dans laquel on codera nos fonction)
+Entre dans le terminal :
+`dotnet add ./PrimeService.Tests/PrimeService.Tests.csproj reference ./PrimeService/PrimeService.csproj`
+
+![](./Ressource/reference-xunit-test.png)
+
+---
+
 ## Les commandes
 
+Resumer des commandes en breve, avec `ren` qui equivaut a `rename` que vous devrez changer selon votre OS (Window/Mac/Linux)
+Et en remplacant le code dans votre class PrimeService : 
+
+```
+dotnet new sln -o unit-testing-using-dotnet-test
+cd unit-testing-using-dotnet-test
+dotnet new classlib -o PrimeService
+ren .\PrimeService\Class1.cs PrimeService.cs
+dotnet sln add ./PrimeService/PrimeService.csproj
+dotnet new xunit -o PrimeService.Tests
+dotnet add ./PrimeService.Tests/PrimeService.Tests.csproj reference ./PrimeService/PrimeService.csproj
+dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
+```
+
+---
+
+Un peu de terminologies avant de rentrer dans le vif du code.
+
+---
+
+
 # La terminologies
-## Test Unitaire
-## Cas de test
-## Suite de test
+
+---
+
+## Test Unitaire (unit test)
+
+C'est Tester un seul cas.
+
+---
+
+## Cas de test (case test)
+
+C'est un fichier de test qui contient un ou plusieur test
+
+---
+
+## Suite de test (test suite)
+
+C'est un fichier de test qui contien plusieur cas de test
+
+---
 
 
 # Test unitaite
-## Quoi tester
+
+---
+
+
+## Quoi tester / c'est quoi un bon test
+
+- Simple : il doit etre simple a ecrire et comprendre
+- Precis : il doit tester une seul chose
+- Independant : il ne doit pas dependre d'un autre test
+- Reproductible : il doit pouvoir être exécuté plusieurs fois sans echec
+
+---
+
 ### Methode de la Classes
+
+Verifier les Methode qui implique des conditions et boucle.
+
+---
+
 ### Conditions de la classe
-### Comportement de la classe
+
+Verifier tout les elements dans la classes depende du conditionnel.
+
+---
+
 ### Tout les chemins possible
 
+On appel chemins toutes les possibles direction que peut prendre une variable lors de l'executions du programme.
+
+Il faut balayer au maximun le code et tester tout les chemins possible.
+
+C'est important, d'autant plus que plus il y aura de la duplication de code, plus il y aura de chemin a emprunter
+
+---
+
+Exemple d'une fonction a 2 chemins:
+
+```csharp
+bool isBiggerThan(int a, int b) {
+    if (a < b) {
+        return false;
+    }
+    return true;
+}
+```
+
+---
+
 ## A eviter
+
 ### Getter / Setter
+Getter et Setter sont tres souvent inutil a verifier car deja proteger de base par les classes de base du c#
+
+---
 
 # Principe Assertion
 
-# Classes Assert pour les tests
+---
+
+## Classes Assert pour les tests
+
+Comment faire un test? 
+Comment verifier une valeur?
+
+La classes Assert est la pour ca,
+elle vous permettera via des methodes ci-dessous de faire des comparaison avec le retours de fonction lors des tests unitaires.
+
+
+---
+
 ## Equal
+
+`Assert.AreEqual(obj, obj, string)`
+
+Cette fonction va comparait 2 objects pour voir s'ils sont egaux.
+
+S'ils ne le sont pas, retournera un exception avec comme message `string`
+ 
+---
+
 ## NotEqual
-## NotSame
+
+`Assert.AreNotEqual(obj, obj, string)`
+
+Cette fonction va comparait 2 objects pour voir s'ils sont differents. 
+
+S'ils ne le sont pas, retournera un exception avec comme message `string`
+
+---
+
 ## Contains
+
+`Assert.Contains(stirng, string, string)`
+
+Cette fonction va verifier que la premiere string est contenue dans la seconde.
+
+Auquel cas la troiseme sera renvoyee en exception.
+
+---
+
 ## DoesNotContains
-## InRange
+
+`Assert.DoesNotContains(stirng, string, string)`
+
+Cette fonction va verifier que la premiere string n'est pas contenue dans la seconde.
+
+Auquel cas la troiseme sera renvoyee en exception.
+
+---
+
+
 ## FALSE
-## Empty
+
+`Assert.False(bool, string)`
+
+Cette fonction va verifier que la valeur est false. Auquel cas la deuxieme sera renvoyee en exception.
+
+---
+
+
 ## TRUE
+
+`Assert.True(bool, string)`
+
+Cette fonction va verifier que la valeur est true. Auquel cas la deuxieme sera renvoyee en exception.
+
+---
+
 ## IsType
 
-# Mot clef 
+`Assert.IsType(type, obj, string)`
+
+Cette fonction va verifier que la valeur est du type. Auquel cas la deuxieme sera renvoyee en exception.
+
+---
+
+
+# Mot clef Pour la classe de test
+
+---
+
 ## [Fact]
+
+L'attribut [Fact] déclare une méthode de test qui est exécutée par le programme d'exécution des tests.
+
+---
+
+
 ## [Theory]
+
+[Théorie] représente une suite de tests qui exécutent le même code mais avec des arguments d'entrée différents.
+
+---
+
 ## [InlineDate]
 
-# La couverture du code
 
-# Repetetions des tests
+L'attribut [InlineData] spécifie les valeurs de ces entrées.
+
+---
+
+# Pratique (TP pas a pas)
+
+---
+
+Maintenant que nous avons toutes les clefs en mains, 
+Il est l'heure de voir ca dans la pratique.
