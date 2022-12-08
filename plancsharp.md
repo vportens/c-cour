@@ -1156,6 +1156,7 @@ if (condition 1 && condition 2)
 
 <!-- TODO : exercice condition avec Et -->
 
+
 --- 
 
 ##### OU
