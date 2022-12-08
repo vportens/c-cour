@@ -380,27 +380,35 @@ Ici nous construirons l'exemple suivant avec :
 - Une classe `PrimeService` qui nous permettera de verifier si un nombre est premier ou non. 
 
 
-Ouvrir un terminal et rentrer la commande suivante : 
+- Ouvrir un terminal et rentrer la commande suivante : 
 `dotnet new sln -o dossier-de-travail`
+
+---
+## Mise en place
 
 ![](./Ressource/dotnet-sln-global.png)
 
 ---
 
-Vous avez creer `dossier-de-travail` avec le fichie `.sln`
-Ouvrir un terminal a l'interieur du dossier.
+## Mise en place
 
-Et y rentrer la commande : `dotnet new classlib -o PrimeService`
+Vous avez creer `dossier-de-travail` avec le fichie `.sln`
+
+- Ouvrir un terminal a l'interieur du dossier.
+
+- Et y rentrer la commande : `dotnet new classlib -o PrimeService`
 
 ![](./Ressource/Class-dotnet-dir.png)
 
 ---
 
-Renommer `Class1.cs` en `PrimeService.cs`
+## Mise en place
+- Renommer `Class1.cs` en `PrimeService.cs`
+    (clic droit sur Class1.cs --> rename )
 
-(clic droit sur Class1.cs --> rename )
+- Remplacer le code dans `PrimeService.cs` avec le code ci-apres  
 
-Remplacer le code dans `PrimeService.cs` avec : 
+---
 
 ```csharp
 using System;
@@ -420,22 +428,29 @@ namespace Prime.Services
 
 ---
 
+## Mise en place
+
 Toujours dans le dossier `dossier-de-travail`
 
-Entre dans le terminal : 
+- Entre dans le terminal : 
 `dotnet sln add ./PrimeService/PrimeService.csproj`
 
 ![](./Ressource/dotnet-sln-sync.png)
 
 ---
 
+## Mise en place
+
 Maintenant on va creer le dossier de test,
-Entre dans le terminal : 
+- Entre dans le terminal : 
 `dotnet new xunit -o PrimeService.Tests`
 
 ![](./Ressource/dotnet-test-dir.png)
 
 ---
+
+
+## Mise en place
 
 Entre dans le terminal : 
 `dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj`
@@ -443,6 +458,9 @@ Entre dans le terminal :
 ![](./Ressource/dotnet-sln-test-sync.png)
 
 ---
+
+
+## Mise en place
 
 Et pour finir, la commande qui va lier les 2 classes (classe de test et la classe dans laquel on codera nos fonction)
 Entre dans le terminal :
@@ -514,13 +532,13 @@ C'est un fichier de test qui contien plusieur cas de test
 
 ### Methode de la Classes
 
-Verifier les Methode qui implique des conditions et boucle.
+Verifier les Methodes qui implique des conditions et boucles.
 
 ---
 
 ### Conditions de la classe
 
-Verifier tout les elements dans la classes depende du conditionnel.
+Verifier tout les elements dans la classes dependent du conditionnel.
 
 ---
 
@@ -660,9 +678,202 @@ L'attribut [InlineData] spécifie les valeurs de ces entrées.
 
 ---
 
-# Pratique (TP pas a pas)
+# Pratique, initialisation du visualisateur
 
 ---
 
 Maintenant que nous avons toutes les clefs en mains, 
 Il est l'heure de voir ca dans la pratique.
+
+Mais avant ca... 
+Dans exetension, aller dans les settings de l'extension `.NET Core Test Explorer`
+
+![](./Ressource/acceder-setting-extension.png)
+
+
+---
+
+Remplir le champ indique avec `dossier-de-travail/**/*Test.csproj`
+
+![](./Ressource/fill-extensionsetting.png)
+
+--- 
+
+L'objectif est que vous compreniez que le champs a remplir ici permet de rechercher tout les tests a executer.
+
+Pour vos prochains projet
+
+---
+
+- premierement nous allons mettre le dossier ou ce trouve vos tests ici : `dossier-de-travail`
+
+
+- `**` signifie a chercher a travers tout les sous dossier
+
+- `*Test.csproj` signigie tout les fichiers qui ce finissent par `Test.csproj`
+
+Donc `dossier-de-travail/**/*Test.csproj` signifie : 
+
+Dans le dossier `dossier-de-travail` je veux tout les fichiers qu'ils se trouvent dans des sous-dossiers ou non qui ce finissent par `*Test.csproj`.
+
+
+---
+
+
+# Pratique (TP pas a pas)
+
+---
+
+## Rappel des objectifs
+
+- Nous voulons mettre en place une classe avec une methode qui nous permettera de verifier si un nombre est premier.
+
+- Un nombre premier est un nombre qui n'est divisible que par lui-meme et 1 (1 est exclue)
+
+---
+
+## Creer mon premier test
+
+- Je creer mon test avant de faire mon code, pour determiner mes objectif.
+
+- 1 n'est pas premier donc mon test portera sur ca.
+
+Dans votre code de test (unitTest1.cs)
+Remplacez le code par : 
+
+---
+
+```csharp
+using Xunit;
+using Prime.Services;
+
+namespace Prime.UnitTests.Services
+{
+    public class PrimeService_IsPrimeShould
+    {
+        [Fact]
+        public void IsPrime_InputIs1_ReturnFalse()
+        {
+            var primeService = new PrimeService();
+            bool result = primeService.IsPrime(1);
+
+            // Use Assert methode to check if result is not prime
+        }
+    }
+}
+```
+
+---
+
+
+## Reponce :
+
+```csharp
+Assert.False(result, "1 should not be prime");
+```
+
+
+---
+
+## Run le test
+
+![](./Ressource/executer-test.png)
+
+---
+
+## Ecrire le test --> coder
+
+Seconde etape maintenant c'est de coder la solution qui remplirais les besoins du test.
+
+- Dans `PrimeService.cs` remplacer la methode `IsPrime` par
+
+---
+
+```csharp
+public bool IsPrime(int candidate)
+{
+    if (candidate == 1)
+    {
+        return false;
+    }
+    throw new NotImplementedException("Not fully implemented.");
+}
+```
+
+Puis run le test encore.
+
+---
+
+## Test-valide, Ajoutez plus de test
+
+Supprimons le test unitaire precedans pour generaliser le cas, remplacer `IsPrime_InputIs1_ReturnFalse` par :
+
+---
+
+```csharp
+private readonly PrimeService _primeService;
+
+public PrimeService_IsPrimeShould()
+{
+    _primeService = new PrimeService();
+}
+
+
+[Theory]
+[InlineData(-1)]
+[InlineData(0)]
+[InlineData(1)]
+public void IsPrime_ValuesLessThan2_ReturnFalse(int value)
+{
+    var result = _primeService.IsPrime(value);
+
+    Assert.False(result, $"{value} should not be prime");
+}
+```
+
+---
+
+## Test-valide, Ajoutez plus de test
+
+Ici nous emploierons les mots clefs :
+- [Theory] : suite de test
+- [InlineData] : valeur specifique du test
+
+Nous allons tester notre programe avec les valeurs suivantes : `-1, 0, 1`
+
+Run les tests
+
+---
+
+
+## Ecrire le test --> coder
+
+Remplacer la methode IsPrime par 
+
+```csharp
+public bool IsPrime(int candidate)
+{
+    if (candidate < 2)
+    {
+        return false;
+    }
+    throw new NotImplementedException("Not fully implemented.");
+}
+```
+
+Run les tests
+
+
+---
+
+## Test-valide, Ajoutez plus de test
+
+Coder des tests pertinant qui casserons la methode IsPrime.
+
+---
+
+## Ecrire le test --> coder 
+
+- Ecrire un code IsPrime qui tiendra la route (pas comme les codes precedents qui fesait office d'exemple).
+
+- Ecrire des tests pour verifier votre code. Et rendez une methode fonctionnelle.
