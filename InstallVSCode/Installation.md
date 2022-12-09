@@ -52,7 +52,7 @@ Telecharger .NET 6.0 : https://dotnet.microsoft.com/en-us/download
 
 ---
 
-![](./Ressources/Untitled.png)
+![](./Ressources/vscode_extensionFund.png)
 
 
 ---
@@ -154,25 +154,21 @@ Pour ouvrir un terminal dans un sous-dossier, clic droit sur le nom du dossier e
 # Organiser ses dossiers, l'architecture des Application .NET
 
 ---
-### Objectif : Creer son premier programme c# : HelloWord
+
+## Objectif : Creer son premier programme c# : HelloWord
 
 Architecture : Creer un dossier par exercice pour organiser ses programmes,
 	
 - Creer son dossier et y rentrer.
 
+---
+
 Commande de creation de Programme c# :
 - Dans vscode : cliquer sur le dossier cicle (dossier ou va se trouver le programme), clic droit -> Ouvrir dans le terminal integre
----
-- lancer dans le terminal
-
-objectif : Creer un dossier par exercice, lancer la commande dotnet new proet y creer un fichier par fonction, 
 
 
+- lancer dans le terminal : `dotnet new console`
 
-
-
-
-
-
+- lancer dans le terminal : `dotnet run`
 
 

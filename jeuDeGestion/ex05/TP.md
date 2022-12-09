@@ -54,6 +54,7 @@ Rajoutez des getters
 qui appelerons, `getWood()`,`getStone()` de myRessources.
 
 
+---
 
 
 # EXERCICE 01 : What is a kingdom without subject ?
@@ -91,7 +92,7 @@ Initialiser cette variable dans le constructeur de village,
 N'oubliez pas de rajouter le nombre de villageois disponible dans la chefHome au nombre de villageois de votre village.
 
 
-
+---
 
 # Exercice 2 : One house is not suffisant for a village
 
@@ -151,6 +152,7 @@ On passera juste addHouse en priver a la fin quand les test seront valide.
 
 
 
+---
 
 # Exercice 3 : Sujets au travail !!
 
@@ -214,6 +216,7 @@ Console.WriteLine(myVillage.getWood()); // Affichera 0
 myVillage.mineStone(5); // Affichera : Il n'y a pas assez de ressources
 ```
 
+---
 
 # Exercice 4 : Where is the Wood ?
 
@@ -270,6 +273,7 @@ Console.WriteLine(myVillage.getWood()); // afficher 55
 myVillage.cutWood(5); // affichera Il n'y a pas assez de ressource
 ```
 
+---
 
 # Exercice 5 : From a village to a kingdom
 
