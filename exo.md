@@ -1,5 +1,5 @@
 
-### Exercice
+## Exercice
 
 1. Creer une variable `age` de type `int` et lui assigner une valeur.
 2. Creer une variable `name` de type `string` et lui assigner une valeur.
@@ -7,7 +7,7 @@
 
 ---
 
-### Exercice solution
+## Exercice solution
 
 ```csharp
 int age = 20;

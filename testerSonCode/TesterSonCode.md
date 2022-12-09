@@ -16,17 +16,17 @@ _backgroundImage: url(./Ressource/Theme/Title.png)
  
 ---
 
-# Quel sont les besoin d'un developpeur
+# Quel sont les besoin d'un développeur
 
 ---
 
 
 ## Introduction 
-Lorsque l'on demande un produit a un developpeur, celui ci doit s'assurer de rendre un travail fonctionnel.
+Lorsque l'on demande un produit a un développeur, celui ci doit s'assurer de rendre un travail fonctionnel.
 
-Il doit aussi repondre au demande du client et produire un produit claire, scalable, et utilisable par d'autre que lui.
+Il doit aussi répondre au demande du client et produire un produit claire, scalable, et utilisable par d'autre que lui.
 
-Il sera donc necessaire pour vous d'automatiser le test de votre code, une depense de temps qui vous en rapportera toujours plus que ce qu'il vous aura couter.
+Il sera donc nécessaire pour vous d'automatiser le test de votre code, une dépense de temps qui vous en rapportera toujours plus que ce qu'il vous aura coûter.
 
 
 
@@ -40,24 +40,23 @@ Il sera donc necessaire pour vous d'automatiser le test de votre code, une depen
 
 ---
 
-### Assurer que votre fonction fonctionne
+## Assurer que votre fonction fonctionne
 
 Dans un premier temps,
 Il serait bien vu que vos fonctions remplisse leurs objectifs principale.
 
-Il serait dommage que l'utilisateur ayant un besoin precit et delegant sa charge de travail;
-grace a vos outils, n'atteigne pas ses objectifs.
+Il serait dommage que l'utilisateur ayant un besoin précité et délégant sa charge de travail;
+grâce a vos outils, n'atteigne pas ses objectifs.
 
-Ou bien meme vous; reutilisant votre code, cela pourrait avoir un effet boule de neige. Vous donnant des heures et des heures de travail pour trouver l'erreur.
-
+Ou bien même vous; réutilisant votre code, cela pourrait avoir un effet boule de neige. Vous donnant des heures et des heures de travail pour trouver l'erreur.
 Il est de bonne habitude de toujours tester son code.
 
 
 ---
 
-### Securiser votre code
+## Sécuriser votre code
 
-Tester permet aussi de se rendre compte de potentielles erreurs en cas d'argument invalide, d'overflow mal gerer, ou bien des condition non proterge.
+Tester permet aussi de se rendre compte de potentielles erreurs en cas d'argument invalide, d'overflow mal gérer, ou bien des condition non protège.
 
 
 ---
@@ -66,24 +65,24 @@ Tester permet aussi de se rendre compte de potentielles erreurs en cas d'argumen
 
 ---
 
-### Assurer la robustesse du code
+## Assurer la robustesse du code
 
-Le code subbit de nombreux tests, et pour le client, ca montre que le produit fonctionne.
+Le code subit de nombreux tests, et pour le client, ca montre que le produit fonctionne.
 
-Il est mit a l'epreuve et apportera de la confiance en l'outil pour le client.
+Il est mit a l’épreuve et apportera de la confiance en l'outil pour le client.
 
 
 ---
 
-### Valider chaque demande Client
+## Valider chaque demande Client
 
-Par ailleur le client vous demendera toujours des choses bien specifique. 
+Par ailleurs le client vous demandera toujours des choses bien spécifique. 
 
-Lorsque celui verra les batteries de tests, une confiance dans le produit et directement votre travail ce creera.
+Lorsque celui verra les batteries de tests, une confiance dans le produit et directement votre travail ce créera.
 
-Car il n'est pas necessaire que le client code.
-Et meme si c'est le cas;
-Les tests permets de valider le cahiers des charges de maniere bien plus elegante et plus sure pour les 2 partis.
+Car il n'est pas nécessaire que le client code.
+Et même si c'est le cas;
+Les tests permets de valider le cahiers des charges de manière bien plus élégante et plus sure pour les 2 partis.
 
 ---
 
@@ -93,9 +92,9 @@ Les tests permets de valider le cahiers des charges de maniere bien plus elegant
 ---
 
 ## Documenter son code
-L'avantage de la documentation, c'est une approche et une utilisation de l'outils de maniere plus simple.
+L'avantage de la documentation, c'est une approche et une utilisation de l'outils de manière plus simple.
 
-Ce ne sera pas toujours le cas. En realite, il y aura beaucoups de moment ou le code ne sera pas documenter.
+Ce ne sera pas toujours le cas. En réalité, il y aura beaucoup de moment ou le code ne sera pas documenter.
 
 Tester le code permet de ce rendre compte des points fort et faible de celui-ci. Et une utilisation plus juste.
 
@@ -103,79 +102,83 @@ Tester le code permet de ce rendre compte des points fort et faible de celui-ci.
 
 ## Maintenir son code
 
-Votre code evolue.
-C'est un fait, que vous y touchiez ou non, les technologies de developpement evolues et par concequent le code base sur celui-ci evolue avec.
+Votre code évolue.
+C'est un fait, que vous y touchiez ou non, les technologies de développement évolues et par conséquent le code base sur celui-ci évolue avec.
 
-Avoir une base de test permet de verifier si votre code est toujours stable, et fonction tel que vous le souhaitez.
+Avoir une base de test permet de vérifier si votre code est toujours stable, et fonction tel que vous le souhaitez.
 
-Quand vous y apporterais des modifications, vous voudrez rajouter des implementations ca sera encore plus vrai.
+Quand vous y apporterais des modifications, vous voudrez rajouter des implémentations ca sera encore plus vrai.
 
-En changeant / rajoutant du code dans vos classes, il se peut que certaines fonctionnaliter casse. 
+---
 
-Vos tests permette de surveiller cas de maniere automatique. Et ne pas avoir a toujours tout tester a la main.
+## Maintenir son code
+En changeant / rajoutant du code dans vos classes, il se peut que certaines fonctionnalités casse. 
+
+Vos tests permette de surveiller cas de manière automatique. Et ne pas avoir a toujours tout tester a la main.
 
 ---
 
 
 # Qu'est ce que la TDD
 
-
+</br>
 Test Driven Developpement
 
 ---
 
 ## Principe du TDD
 
-Le principe du TDD est simple. Il consiste a ecrire un test avant d'ecrire le code.
+Le principe du TDD est simple. Il consiste a écrire un test avant d’écrire le code.
 
-Ainsi, on s'assure que le code que l'on va ecrire est bien celui qui est attendu par le test.
+Ainsi, on s'assure que le code que l'on va écrire est bien celui qui est attendu par le test.
 
-Il y a donc 3 etapes a suivre.
+Il y a donc 3 étapes a suivre.
+
+---
+
+
+## Écrire un test
+
+Écrire un test permet de définir les besoins du code.
+
+C'est une étape primordiale dans le développement d'un projet.
+
+---
+
+## Écrire un code qui passe le test
+
+Après avoir écris le test, il faut écrire le code qui permettra de passer ce test.
 
 ---
 
 
-### Ecrire un test
+## Refactoriser le code
 
-Ecrire un test permet de definir les besoins du code.
-
-C'est une etape primordiale dans le developpement d'un projet.
-
----
-
-### Ecrire un code qui passe le test
-
-Apres avoir ecris le test, il faut ecrire le code qui permettra de passer ce test.
-
-
-
-### Refactoriser le code
-
-Lorsque le code passe le test, il faut reflechir a comment ameliorer le code.
+Lorsque le code passe le test, il faut réfléchir a comment améliorer le code.
 
 Le but est de le rendre plus lisible, plus simple, et plus rapide.
 
 ---
 
-### La boucle recommence
+## La boucle recommence
 
 Votre code passe votre test.
 
-Il faut ecrir plus de test, et recommencer les etapes tout en fesant que les tests precedents continue de fonctionner.
+Il faut écrire plus de test, et recommencer les étapes tout en faisant que les tests précédents continue de fonctionner.
 
 Une fois tout les besoins tester, vous aurez correctement tester votre code.
 
 ---
 
-# Cycle RGR (Red-Green-Refactor)
+## Cycle RGR (Red-Green-Refactor)
 
 Le cycle red-green-refactor vous guidera dans l'écriture de vos tests.
 
-red : Vous écrivez un test qui échoue, car le code n'est pas encore implémenté.(Le resultat sera rouge)
+red : Vous écrivez un test qui échoue, car le code n'est pas encore implémenté.(Le résultat sera rouge)
 
-green : Vous écrivez le code pour que le test passe. (Le resultat sera vert)
+green : Vous écrivez le code pour que le test passe. (Le résultat sera vert)
 
-Refactor : Vous refactorisez votre code pour le rendre plus lisible et plus maintenable. (Le resultat doit rester vert)
+Refactor : Vous refactorisez votre code pour le rendre plus lisible et plus maintenable. (Le résultat doit rester vert)
 
 <!-- TODO mettre l'image de rgr -->
 ---
@@ -332,7 +335,6 @@ Donc pas de soucis a ce faire.
 
 ---
 
----
 
 # Installation de Xunit
 
@@ -342,7 +344,7 @@ Donc pas de soucis a ce faire.
 
 ---
 
-# Installaton exentension VSCode
+## Installaton exentension VSCode
 
 Nom de l'extension : 
 
@@ -409,7 +411,7 @@ Vous avez creer `dossier-de-travail` avec le fichie `.sln`
 - Remplacer le code dans `PrimeService.cs` avec le code ci-apres  
 
 ---
-
+<!-- _backgroundImage: url(./Ressource/Theme/Flat.png) -->
 ```csharp
 using System;
 
@@ -488,6 +490,8 @@ dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
 
 ---
 
+## Les commandes
+
 Un peu de terminologies avant de rentrer dans le vif du code.
 
 ---
@@ -530,19 +534,19 @@ C'est un fichier de test qui contien plusieur cas de test
 
 ---
 
-### Methode de la Classes
+## Methode de la Classes
 
 Verifier les Methodes qui implique des conditions et boucles.
 
 ---
 
-### Conditions de la classe
+## Conditions de la classe
 
 Verifier tout les elements dans la classes dependent du conditionnel.
 
 ---
 
-### Tout les chemins possible
+## Tout les chemins possible
 
 On appel chemins toutes les possibles direction que peut prendre une variable lors de l'executions du programme.
 
@@ -552,7 +556,8 @@ C'est important, d'autant plus que plus il y aura de la duplication de code, plu
 
 ---
 
-Exemple d'une fonction a 2 chemins:
+## Exemple 
+une fonction a 2 chemins:
 
 ```csharp
 bool isBiggerThan(int a, int b) {
@@ -567,7 +572,7 @@ bool isBiggerThan(int a, int b) {
 
 ## A eviter
 
-### Getter / Setter
+## Getter / Setter
 Getter et Setter sont tres souvent inutil a verifier car deja proteger de base par les classes de base du c#
 
 ---
@@ -593,6 +598,7 @@ elle vous permettera via des methodes ci-dessous de faire des comparaison avec l
 
 Cette fonction va comparait 2 objects pour voir s'ils sont egaux.
 
+
 S'ils ne le sont pas, retournera un exception avec comme message `string`
  
 ---
@@ -609,7 +615,7 @@ S'ils ne le sont pas, retournera un exception avec comme message `string`
 
 ## Contains
 
-`Assert.Contains(stirng, string, string)`
+`Assert.Contains(string, string, string)`
 
 Cette fonction va verifier que la premiere string est contenue dans la seconde.
 
@@ -619,7 +625,7 @@ Auquel cas la troiseme sera renvoyee en exception.
 
 ## DoesNotContains
 
-`Assert.DoesNotContains(stirng, string, string)`
+`Assert.DoesNotContains(string, string, string)`
 
 Cette fonction va verifier que la premiere string n'est pas contenue dans la seconde.
 
@@ -682,28 +688,36 @@ L'attribut [InlineData] spécifie les valeurs de ces entrées.
 
 ---
 
+## Pratique
+
 Maintenant que nous avons toutes les clefs en mains, 
 Il est l'heure de voir ca dans la pratique.
 
 Mais avant ca... 
 Dans exetension, aller dans les settings de l'extension `.NET Core Test Explorer`
 
+---
+
+
 ![](./Ressource/acceder-setting-extension.png)
 
 
 ---
-
+## Pratique
 Remplir le champ indique avec `dossier-de-travail/**/*Test.csproj`
 
 ![](./Ressource/fill-extensionsetting.png)
 
 --- 
 
+## Setup Xunit Extension
 L'objectif est que vous compreniez que le champs a remplir ici permet de rechercher tout les tests a executer.
 
 Pour vos prochains projet
 
 ---
+
+## Setup Xunit Extension
 
 - premierement nous allons mettre le dossier ou ce trouve vos tests ici : `dossier-de-travail`
 
@@ -712,6 +726,9 @@ Pour vos prochains projet
 
 - `*Test.csproj` signigie tout les fichiers qui ce finissent par `Test.csproj`
 
+---
+
+## Setup Xunit Extension
 Donc `dossier-de-travail/**/*Test.csproj` signifie : 
 
 Dans le dossier `dossier-de-travail` je veux tout les fichiers qu'ils se trouvent dans des sous-dossiers ou non qui ce finissent par `*Test.csproj`.
@@ -742,7 +759,7 @@ Dans votre code de test (unitTest1.cs)
 Remplacez le code par : 
 
 ---
-
+<!-- _backgroundImage: url(./Ressource/Theme/Flat.png) -->
 ```csharp
 using Xunit;
 using Prime.Services;
@@ -788,6 +805,7 @@ Seconde etape maintenant c'est de coder la solution qui remplirais les besoins d
 - Dans `PrimeService.cs` remplacer la methode `IsPrime` par
 
 ---
+<!-- _backgroundImage: url(./Ressource/Theme/Flat.png) -->
 
 ```csharp
 public bool IsPrime(int candidate)
@@ -810,6 +828,7 @@ Supprimons le test unitaire precedans pour generaliser le cas, remplacer `IsPrim
 
 ---
 
+<!-- _backgroundImage: url(./Ressource/Theme/Flat.png) -->
 ```csharp
 private readonly PrimeService _primeService;
 
@@ -868,12 +887,12 @@ Run les tests
 
 ## Test-valide, Ajoutez plus de test
 
-Coder des tests pertinant qui casserons la methode IsPrime.
+Coder des tests pertinent qui casserons la méthode IsPrime.
 
 ---
 
-## Ecrire le test --> coder 
+## Écrire le test --> coder  
 
-- Ecrire un code IsPrime qui tiendra la route (pas comme les codes precedents qui fesait office d'exemple).
+- Écrire un code IsPrime qui tiendra la route (pas comme les codes précédents qui faisait office d'exemple).
 
-- Ecrire des tests pour verifier votre code. Et rendez une methode fonctionnelle.
+- Écrire des tests pour vérifier votre code. Et rendez une méthode fonctionnelle.
