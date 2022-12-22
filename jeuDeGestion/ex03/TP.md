@@ -1,4 +1,4 @@
-TP : Jeu de gestion, je creer mon village
+TP : Jeu de gestion, je créer mon village
 
 
 ---
@@ -7,7 +7,7 @@ TP : Jeu de gestion, je creer mon village
 
 ---
 
-Creer une classe `Village`,
+créer une classe `Village`,
 qui aura comme attribut :
 
 `string name` qui ne sera accessible que par la methode `getName()` et qui sera instancier a la creation d'un nouveau village.
@@ -23,7 +23,7 @@ qui aura comme attribut :
 
 Dans un fichier Ressources.cs
 
-Creer une classe `Ressources`
+créer une classe `Ressources`
 Elle possedera deux attributs priver :
 - `int woods`
 - `int stones`
@@ -40,7 +40,7 @@ nbr est le nombre de ressources utilisees
 !! attention on ne pourra pas utiliser plus de ressource que l'on en a. 
 
 
-Creer un constructeur `Ressources` qui ne prendra aucun parametre et qui initialisera woods a 10 et stones a 10.
+créer un constructeur `Ressources` qui ne prendra aucun parametre et qui initialisera woods a 10 et stones a 10.
 
 
 Une fois fait;
@@ -58,8 +58,8 @@ qui appelerons, `getWood()`,`getStone()` de myRessources.
 
 EXERCICE 01 : What is a kingdom without subject ?
 
-Creer un fichier House.cs
-Dans lequel vous creerez une classe public House
+créer un fichier House.cs
+Dans lequel vous créerez une classe public House
 Elle aura 3 attributs : 
 - `stone_needed` (cout en pierre)
 - `wood_needed` (cout en bois)
@@ -96,7 +96,7 @@ N'oubliez pas de rajouter le nombre de villageois disponible dans la chefHome au
 Exercice 2 : One house is not suffisant for a village
 
 Dans votre class Village, 
-Creer un attribut `listHouse` qui sera une un tableau de maison public, 
+créer un attribut `listHouse` qui sera une un tableau de maison public, 
 Dans le constructeur de village, vous l'initialiserez;
 apres avoir initialisez `chefHome`, telque votre `listHouse` continient `chefHome`.
 
@@ -112,7 +112,7 @@ Console.WriteLine(myVillage.listHouse.Length); // affichera 1
 
 Ajoutez des maison a votre list,
 
-Creer une methode public qui ajoutera une `House` a votre `listHouse`.
+créer une methode public qui ajoutera une `House` a votre `listHouse`.
 Prototype : `public void addHouse()`
 
 
@@ -159,11 +159,11 @@ Mais ce n'est pas suffisant !!!
 Mettez vos sujets au travails pour leurs chef (vous).
 
 
-Creer un fichier Mine.cs
+créer un fichier Mine.cs
 Avec une classe `Mine`
 
-Sur le meme model de `House`
-Creer des les attributs suivant : 
+Sur le même model de `House`
+créer des les attributs suivant : 
 - gain_stone (retournera 10)
 - stone_cost (retournera 2)
 - wood_cost (retournera 1)
@@ -174,10 +174,10 @@ Console.WriteLine(Mine.stone_cost) // affichera 2
 Console.WriteLine(Mine.wood_cost) // affichera 1
 ```
 
-Creer un construceur `Mine()`
+créer un construceur `Mine()`
 qui affichera dans le terminal `"Mine created"`)
 
-Creer une methode public `mineStone` qui prendra en argument un nombre de villageois, et qui renvera le produit de `nombre de villageois * gain_stone`
+créer une methode public `mineStone` qui prendra en argument un nombre de villageois, et qui renvera le produit de `nombre de villageois * gain_stone`
 
 Ajouter a la classes `Village` : 
 - un attribut `Mine` qui sera instancier dans le constructeur.
@@ -185,7 +185,7 @@ Ajouter a la classes `Village` :
 - une methode public `mineStone` qui prendra en parametre un nombre de villageois.
 
 Lorsqu'un villageois utilise la methode `mineStone` celui-ci consomme `Mine.stone_cost` et `Mine.wood_cost`
-Et celui-ci vous rapportera `Mine.gain_stone` (creer une methode dans la classes `Ressource`  `public addStone(int nbr)` qui ajouteras nbr a stone).
+Et celui-ci vous rapportera `Mine.gain_stone` (créer une methode dans la classes `Ressource`  `public addStone(int nbr)` qui ajouteras nbr a stone).
 
 
 `mineStone` devra etre protege contre : 

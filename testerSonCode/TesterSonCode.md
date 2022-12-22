@@ -268,7 +268,7 @@ Lorsque vous aurez bien maitrise l'outils de creation de test, un gain de temps 
 Vos test ce font sur un autre dossier, qui ira instancier vos classes. 
 
 Cela laissera place net a votre code.
-Pour mettre tout vos tests au meme endroit.
+Pour mettre tout vos tests au même endroit.
 
 Une modification de classe / methode;
 Relancer la batterie de test tout en gardant quelque chose de lisible.
@@ -394,7 +394,7 @@ Ici nous construirons l'exemple suivant avec :
 
 ## Mise en place
 
-Vous avez creer `dossier-de-travail` avec le fichie `.sln`
+Vous avez créer `dossier-de-travail` avec le fichie `.sln`
 
 - Ouvrir un terminal a l'interieur du dossier.
 
@@ -443,7 +443,7 @@ Toujours dans le dossier `dossier-de-travail`
 
 ## Mise en place
 
-Maintenant on va creer le dossier de test,
+Maintenant on va créer le dossier de test,
 - Entre dans le terminal : 
 `dotnet new xunit -o PrimeService.Tests`
 
@@ -745,13 +745,13 @@ Dans le dossier `dossier-de-travail` je veux tout les fichiers qu'ils se trouven
 
 - Nous voulons mettre en place une classe avec une methode qui nous permettera de verifier si un nombre est premier.
 
-- Un nombre premier est un nombre qui n'est divisible que par lui-meme et 1 (1 est exclue)
+- Un nombre premier est un nombre qui n'est divisible que par lui-même et 1 (1 est exclue)
 
 ---
 
-## Creer mon premier test
+## créer mon premier test
 
-- Je creer mon test avant de faire mon code, pour determiner mes objectif.
+- Je créer mon test avant de faire mon code, pour determiner mes objectif.
 
 - 1 n'est pas premier donc mon test portera sur ca.
 

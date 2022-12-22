@@ -1,8 +1,8 @@
 
 ## Exercice
 
-1. Creer une variable `age` de type `int` et lui assigner une valeur.
-2. Creer une variable `name` de type `string` et lui assigner une valeur.
+1. créer une variable `age` de type `int` et lui assigner une valeur.
+2. créer une variable `name` de type `string` et lui assigner une valeur.
 3. Afficher les valeurs de ces deux variables avec `Console.WriteLine`.
 
 ---

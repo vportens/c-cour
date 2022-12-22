@@ -1,4 +1,4 @@
- # TP : Jeu de gestion, je creer mon village
+ # TP : Jeu de gestion, je créer mon village
 
 
 ---
@@ -7,7 +7,7 @@
 
 ---
 
-Creer une classe `Village`,
+créer une classe `Village`,
 qui aura comme attribut :
 
 `string name` qui ne sera accessible que par la methode `getName()` et qui sera instancier a la creation d'un nouveau village.
@@ -23,7 +23,7 @@ qui aura comme attribut :
 
 Dans un fichier Ressources.cs
 
-Creer une classe `Ressources`
+créer une classe `Ressources`
 Elle possedera deux attributs priver :
 - `int woods`
 - `int stones`
@@ -40,7 +40,7 @@ nbr est le nombre de ressources utilisees
 !! attention on ne pourra pas utiliser plus de ressource que l'on en a. 
 
 
-Creer un constructeur `Ressources` qui ne prendra aucun parametre et qui initialisera woods a 10 et stones a 10.
+créer un constructeur `Ressources` qui ne prendra aucun parametre et qui initialisera woods a 10 et stones a 10.
 
 
 Une fois fait;

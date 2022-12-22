@@ -19,10 +19,10 @@ _backgroundImage: url(./Ressources/Theme/Title.png)
 ---
 
 ## Qu'est-ce qu'une variable ?
-Une variable est une zone mémoire dans laquelle on pourra stocker une valeur. 
+Une variable est une zone mémoire dans laquelle on peut stocker une valeur. 
 
 
-Elle est compose de 3 éléments :
+Elle est composée de 3 éléments :
 * un nom
 * un type
 * une valeur
@@ -32,7 +32,7 @@ Elle est compose de 3 éléments :
 
 ## Déclaration d'une variable
 
-Pour déclarer une variable on associe un type à un nom, avant d'associer celui-ci a une valeur.
+Pour déclarer une variable on associe un type à un nom, avant d'associer celui-ci à une valeur.
 Pour être capable de bien associer une variable à une valeur, il faut déjà comprendre les types.
 
 Exemple : 
@@ -67,6 +67,8 @@ Par exemple, si on a une variable de type `int`, on pourra l'utiliser pour stock
 Si on demande à l'utilisateur d'entrer un texte, on va stocker cette valeur dans une variable de type `string` et non `int`.
 
 ---
+
+## Pourquoi utiliser des types ?
 
 Et par exemple, on ne peut pas additionner une chaîne de caractères avec un nombre.
 
@@ -106,12 +108,14 @@ Exemple : `true`, `false`
 
 ## Exemple de déclaration
 
+
 ```csharp
 int nom_de_variable = 12;
 float variable_floating_point = 2.0f;
 string what_ever_name = "bonjour les amiches";
 bool name_true_false = true;
 ```
+
 
 Il faut bien comprendre ici que le nom des variables est libre de choix.
 
@@ -137,10 +141,10 @@ string car_name;
 
 ## Exercice sur les variables
 
-1. Creer une variable `age` de type `int` et lui assigner une valeur.
-2. Creer une variable `name` de type `string` et lui assigner une valeur.
-3. Creer une variable `isAdult` de type `bool` et lui assigner une valeur.
-4. Creer une variable `height` de type `float` et lui assigner une valeur.
+1. Créer une variable `age` de type `int` et lui assigner une valeur.
+2. Créer une variable `name` de type `string` et lui assigner une valeur.
+3. Créer une variable `isAdult` de type `bool` et lui assigner une valeur.
+4. Créer une variable `height` de type `float` et lui assigner une valeur.
 
 5. Afficher la valeur de chaque variable avec la fonction `Console.WriteLine(nom_de_variable)`
 
@@ -162,26 +166,26 @@ Console.WriteLine(height);
 ---
 ## Exercice sur le nommage des variables 
 
-1. Vous possedez un café et vous voulez automatiser la visualisation de certains chiffres. Pour cela vous demandez au serveur du jour de rentrer le nombre de café servit, la quantité en graine (en gramme) utilise, le nombre de client servit et le nom du serveur, pour un programme que vous avez confectionné. 
-Créez des variables adaptées à chacune de ses informations et nommez judicieusement.
+1. Vous possédez un café et vous voulez automatiser la visualisation de certains chiffres. Pour cela vous demandez au serveur du jour de rentrer le nombre de cafés servis, la quantité en graine (en grammes) utilisées, le nombres de clients servis et le nom du serveur, pour un programme que vous avez confectionné. 
+Créez des variables adaptées à chacune de ces informations et nommez-les judicieusement.
 ---
 ## Exercice
-2. Bob, Richard et Mark sont pêcheurs sur le même bâteau. Ils font la compétition du nombre de poisson péchés et du poids total péchés. Le capitaine leur propose de créer un petit programme dans lequel chacun rentrera leurs noms, suivit du nombre de poisson péchés aujourd'hui ainsi que le poids total de leurs prise du jour. 
-Créer deux variables pour chacun d'eux et nommez les.
+2. Bob, Richard et Mark sont pêcheurs sur le même bâteau. Ils font la compétition du nombre de poissons péchés et du poids total péché. Le capitaine leur propose de créer un petit programme dans lequel chacun entrera leur nom, suivi du nombre de poissons péchés aujourd'hui ainsi que le poids total de leurs prise du jour. 
+Créez deux variables pour chacun d'eux et nommez-les.
 ---
 
 
 
 ## Lecture
 
-Une fois ma variable déclaré, elle pourra être utilisée tout au long de mon programme. Pour cela nous utiliserons son nom sans avoir à redefinir son type.
+Une fois ma variable déclarée, elle pourra être utilisée tout au long de mon programme. Pour cela nous utiliserons son nom sans avoir à redéfinir son type.
 
 ---
 
 ## Comment utiliser ma variable
 
 Pour utiliser une variable, c'est à dire accéder à la valeur stockée dans celle-ci, il suffit de l'appeler par son nom.
-Pour autant, nous ne pouvons pas reéefinir son type après déclaration.
+Pour autant, nous ne pouvons pas redéfinir son type après déclaration.
 
 ```csharp
 int nom_de_variable;
@@ -220,8 +224,8 @@ Console.WriteLine(nom_de_variable); // affichera 12
 ## Les opérateurs 
 
 Les opérateurs sont des symboles qui permettent d'effectuer des opérations sur des variables ou des valeurs.
-Nous avons vu précedemment l'opérateur d'assignation `=`
-pour associer une variable à une valeur.
+Nous avons vu précédemment l'opérateur d'assignation `=`
+pour associer une valeur à une variable.
 Mais il en existe pour faire des opérations arithmétiques, pour comparer des variables, pour en incrémenter et pour concaténer.
 
 ---
@@ -306,18 +310,18 @@ Console.WriteLine(c); // affichera 1
 
 ## Exercice 
 
-1. Creer une variable pizza (entier) qui sera egale a 5.
-2. Creer une variable part_de_pizza (entier) qui egale a 6.
-3. Creer une variable nbr_part_de_pizza qui sera egale au nombre de pizza multiplier par part_de_pizza.
+1. Créer une variable pizza (entier) qui sera égale à 5.
+2. Créer une variable part_de_pizza (entier) qui sera égale à 6.
+3. Créer une variable nbr_part_de_pizza qui sera égale au nombre de pizza multiplier par part_de_pizza.
 
 ---
 ## Exercice
 
 Vous etes 9 Personnes.
 
-4. Creer une variable nbr_personne qui sera egale a 9.
-5. Creer une variable part_de_pizza_par_personne, qui sera egale au mon de part_de_pizza diviser par le nbr_personne.
-6. Creer une variable part_de_pizza_restante qui sera egale au nombre de par restante apres distribution (utiliser modulo)
+4. Créer une variable nbr_personne qui sera égale à 9.
+5. Créer une variable part_de_pizza_par_personne, qui sera égale au nombre de part_de_pizza divisées par le nbr_personne.
+6. Créer une variable part_de_pizza_restante qui sera égale au nombre de parts restantes après distribution (utilisez modulo)
 
 ---
 
@@ -341,7 +345,7 @@ int part_de_pizza_restante = nbr_part_de_pizza % nbr_personne;
 
 ## Opérations de comparaisons
 
-La comparaison de variable est au coeur des boucles logiques et conditionnelles, elle vous permettera de comparer deux variables. 
+La comparaison de variables est au coeur des boucles logiques et conditionnelles, elle vous permettra de comparer deux variables. 
 
 Le retour d'une comparaison est une variable `bool` true ou false en fonction de la vérité de comparaison.
 
@@ -421,7 +425,7 @@ Console.WriteLine(c); // affichera true
 <!-- TODO : exercice de comparaison de base -->
 ## Exercice  
 
-Creer 4 variables, `a`, `b`, `c` et `d` de type `float` telque :
+Créer 4 variables, `a`, `b`, `c` et `d` de type `float` tel que :
 - a = 1.5
 - b = 5
 - c = 1.5
@@ -430,8 +434,8 @@ Creer 4 variables, `a`, `b`, `c` et `d` de type `float` telque :
 ---
 
 ## Exercice 
-En utilisant l'operateur `>` et 2 des 4 variables (`a`, `b`, `c`, `d`);
-Creer 2 variable de type `bool` telque : 
+En utilisant l'opérateur `>` et 2 des 4 variables (`a`, `b`, `c`, `d`);
+Créer 2 variables de type `bool` telque : 
 - f = true
 - g = false
 
@@ -439,8 +443,8 @@ Creer 2 variable de type `bool` telque :
 
 ## Exercice 
 
-En utilisant l'operateur `<` et 2 des 4 variables (`a`, `b`, `c`, `d`);
-Creer 2 variable de type `bool` telque : 
+En utilisant l'opérateur `<` et 2 des 4 variables (`a`, `b`, `c`, `d`);
+Créer 2 variables de type `bool` tel que : 
 - h = true
 - i = false
 
@@ -448,7 +452,7 @@ Creer 2 variable de type `bool` telque :
 ## Exercice 
 
 En utilisant l'operateur `==` et 2 des 4 variables (`a`, `b`, `c`, `d`);
-Creer 2 variable de type `bool` telque : 
+Créer 2 variables de type `bool` tel que : 
 - j = true
 - k = false
 
@@ -532,20 +536,20 @@ Console.WriteLine(a); // affichera -2
 
 ## Opérateur décrementation de n
 <!-- TODO : exercice incrementation de base -->
-Creer deux variables `int`:  `salaire` et `solde_banque`
+Créer deux variables `int`:  `salaire` et `solde_banque`
 
-- Initialiser salaire a 1280 et solde_banque a 329.
-- Incrementer solde_banque de salaire
+- Initialiser salaire à 1280 et solde_banque à 329.
+- Incrémenter solde_banque de salaire
 
 ---
 
 ## Opérateur décrementation de n
 
-Creer deux nouvelles variable `int` : `depense_course` et `loyer`
-- Initialiser depense_course a 450
-- Initialiser loyer a 600
-- Decrementer solde_banque de depense_course 
-- Decrementer solde_banque de loyer
+Créer deux nouvelles variables `int` : `depense_course` et `loyer`
+- Initialiser depense_course à 450
+- Initialiser loyer à 600
+- Décrémenter solde_banque de depense_course 
+- Décrémenter solde_banque de loyer
 
 
 ---
@@ -553,7 +557,7 @@ Creer deux nouvelles variable `int` : `depense_course` et `loyer`
 ## Opérateur décrementation de n
 
 Vous avez une augmentation de salaire de 150
-- Incrementer votre salaire de 150
+- Incrémenter votre salaire de 150
 
 ---
 
@@ -610,7 +614,7 @@ Le Scope  | La portée
 
 ## Qu'est-ce que le scope
 
-Le scope est la portée d'une variable, portée geographique : c'est là où la variable est visible dans le code.
+Le scope est la portée d'une variable, portée géographique : c'est là où la variable est visible dans le code.
 Les variables déclarées dans une :
 -  boucle ne peuvent être utilisées que dans cette boucle.
 -  fonction ne peuvent être utilisées que dans cette fonction.
@@ -628,7 +632,7 @@ Console.WriteLine(b); // affichera 5
 Console.WriteLine(b); // affichera une erreur
 ```
 
-Ici, `b` est déclaré dans des accolades `{ }`, et n'est donc accessible qu'au sein de ces `{ }`. C'est pour ca que nous avons une erreur au second `Console.WriteLine(b)`
+Ici, `b` est déclaré dans des accolades `{ }`, et n'est donc accessible qu'au sein de ces `{ }`. C'est pour ça que nous avons une erreur au second `Console.WriteLine(b)`
 
 
 ---
@@ -637,7 +641,7 @@ Ici, `b` est déclaré dans des accolades `{ }`, et n'est donc accessible qu'au 
 
 Une variable globale est une variable declarée en dehors de tout scope. Elle est donc accessible partout dans le code.
 
-Dans l'exemple ci dessus, `a` est une varible globale car elle est déclarée en dehors de tout scope (`{ }`), et est accessible partout (toujours ci dessus nous avons accès à `a` dans le même scope où est déclaré `b`)
+Dans l'exemple ci-dessus, `a` est une varible globale car elle est déclarée en dehors de tout scope (`{ }`), et est accessible partout (toujours ci-dessus nous avons accès à `a` dans le même scope où est déclaré `b`)
 
 
 
@@ -645,7 +649,7 @@ Dans l'exemple ci dessus, `a` est une varible globale car elle est déclarée en
 
 ## Variable locale
 
-Une variable locale est une variable declarée dans un scope, et qui ne peut etre utilisée que dans ce scope.
+Une variable locale est une variable declarée dans un scope, et qui ne peut être utilisée que dans ce scope.
 
 `b` est une variable dite locale à son scope.
 
@@ -694,29 +698,29 @@ Console.WriteLine(a);
 
 Une variable est définie dans son scope comme vu précédemment et ce scope possèdera toutes les entitées présente dans celle-ci. 
 
-C'est pour ca que le programme ci dessus fonctionne et affiche bien les résultats attendus
+C'est pour ça que le programme ci-dessus fonctionne et affiche bien les résultats attendus
 
 ---
 
 ## Exercice
 <!-- TODO : exercice pour le scope -->
-Creer 3 variable globals telque :
-- `jean` une string initialiser a "Jean"
-- `ville` une string initialiser a "Paris"
-- `annee` un int initialiser a 1998
+Créer 3 variables globals telles que :
+- `jean` une string initialisée à "Jean"
+- `ville` une string initialisée à "Paris"
+- `annee` un int initialisée à 1998
 
 ---
 
 ## Exercice
 
-Creer un scope dans lequel sera instancier :
-- `annee2` un int egale a 1999
-- `lea` une string egale a "Lea"
+Créer un scope dans lequel seront instanciés :
+- `annee2` un int égal à 1999
+- `lea` une string égale à "Lea"
 
 
-Creer un second scope dans le premier et instacier :
-- `fact_check` un boleen qui verifiera `annee < anne2`;
-- une string `copie_ville` qui sera egale a `ville`
+Créer un second scope dans le premier et instanciez :
+- `fact_check` un boléen qui vérifiera `annee < anne2`;
+- une string `copie_ville` qui sera égale à `ville`
 
 ---
 
@@ -745,11 +749,11 @@ string lea = "Lea";
 
 ---
 
-## Definition
+## Définition
 
 Un tableau est une collection d'entitées du même type. Chaque entité est accessible via un index.
 
-Un tableau peut etre visualisé comme un coffre qui contient d'autre coffre.
+Un tableau peut être visualisé comme un coffre qui contient d'autres coffres.
 
 ---
 
@@ -821,7 +825,7 @@ string[] weekDays2 = { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
 <!-- TODO : exercice declaration tableau basique -->
 ## Exercice : 
 
-- Creer un tableau de string `mois` pour y mettre tout les mois de l'annee et instancier le.
+- Créer un tableau de string `mois` pour y mettre tous les mois de l'année et instanciez le.
 
 ---
 
@@ -879,9 +883,9 @@ Console.WriteLine(tableau_int[3]); // affichera 9
 
 ## Exercie
 
-Avec l'exercice precedent, 
-Creer un tableau de string `mois_avec_e`, qui contiendra tout les mois qui possede un `e` dans leurs nom.
-Celui-ci sera initialiser seulement a l'aide d'index et le tableau de `mois`.
+Avec l'exercice précédent, 
+Créer un tableau de string `mois_avec_e`, qui contiendra tous les mois qui possèdent un `e` dans leurs nom.
+Celui-ci sera initialiser seulement à l'aide d'index et le tableau de `mois`.
 
 ---
 
@@ -906,7 +910,7 @@ mois_avec_e[6] = mois[11];
 
 ## Méthode de base
 
-Un tableau en C# est un object qui possède des certaines propriétés déjà intégré.
+Un tableau en C# est un object qui possède des centaines de propriétés déjà intégrées.
 Pour les tableaux, la principale et la plus utilisée est :
 - `Length` : retourne la taille du tableau
 
@@ -943,7 +947,7 @@ Une condition est une expression qui retourne un `booleen (true ou false)`.
 
 En fonction de la valeur de la condition, un bloc de code sera éxécuté (`true`) ou non (`false`).
 
-Tous les opérateurs de Comparaison peuvent être utilisé dans les conditions
+Tous les opérateurs de comparaison peuvent être utilisé dans les conditions
 
 <!-- TODO link vers les operateur de comparaison -->
 
@@ -979,16 +983,16 @@ if (condition 1)
 <!-- TODO : exercice sur if -->
 
 ## Exercice : 
-Creer deux variable `int` solde_camille et solde_bob
+créer deux variable `int` solde_camille et solde_bob
 initialiser les telque : 
 solde_camille = 1111;
 solde_bob = 289; 
-Creer une condition `if` si solde_camille est superieur au solde_bob et y mettre le code suivant
+créer une condition `if` si solde_camille est supérieur au solde_bob et y mettre le code suivant
 ```csharp
 Console.WriteLine("camille a un solde superieur a bob " + solde_camille);
 ```
 
-Executer le code.
+Exécuter le code.
 
 
 ---
@@ -1026,18 +1030,18 @@ else
 
 <!-- TODO : exercice sur if else -->
 ## Exercice : 
-Reprendre le code precedent et ajouter au scope de else :  
+Reprendre le code précédent et ajouter au scope de else :  
 ```csharp
 Console.WriteLine("Bob a un solde superieur a bob " + solde_bob);
 ```
 
 
-Executer le code.
+Exécuter le code.
 
 Changer le solde de bob a 2222;
 
-Executer le code.
-Quelle que chose a change dans l'affichage du terminal?
+Exécuter le code.
+Quel que chose a-t-il changé dans l'affichage du terminal?
 
 ---
 
@@ -1082,17 +1086,17 @@ Console.WriteLine("a est égal à b");
 }
 ```
 
-Executer le code.
+Exécuter le code.
 
 ---
 
 ## Exercice
 ```
 Changer int a = 120;
-Executer le code.
+Exécuter le code.
 Changer int a = 120;
 Changer int b = 120;
-Executer le code.
+Exécuter le code.
 ```
 
 ---
@@ -1174,7 +1178,7 @@ Les opérateurs booleen permettent de combiner des conditions.
 
 ## ET
 
-L'opérateur ET permet d'executer un bloc de code si les deux conditions sont vraies.
+L'opérateur ET permet d'exécuter un bloc de code si les deux conditions sont vraies.
 
 ```csharp
 if (condition 1 && condition 2)
@@ -1187,7 +1191,7 @@ if (condition 1 && condition 2)
 
 ## OU
 
-L'opérateur OU permet d'executer un bloc de code si une des deux conditions sont vraies.
+L'opérateur OU permet d'exécuter un bloc de code si une des deux conditions est vraie.
 
 ```csharp
 if (condition 1 || condition 2)
@@ -1214,7 +1218,7 @@ if (!condition)
 ---
 
 ## Exercice 
-<!-- TODO : Creer un exercice où on devra utiliser if avec des operateurs booleen && || -->
+<!-- TODO : créer un exercice où on devra utiliser if avec des operateurs booleen && || -->
 
 
 ```csharp
@@ -1222,12 +1226,12 @@ int nbr_pizza = 14;
 int nbr_couvert = 30;
 int nbr_personne = 12;
 
-1 Creer une condition qui verifie : 
+1 créer une condition qui verifie : 
 - tout le monde aura 2 couverts au moins 
 	ET
 - tout le monde aura 1 pizza au moins
 
-2 Creer une condition qui verifie : 
+2 créer une condition qui verifie : 
 - tout le monde aura 2 couvert au moins 
 	OU
 - tout le monde aura 1 pizza au moins
@@ -1241,7 +1245,7 @@ int nbr_personne = 12;
 
 Les opérateurs booleen sont evalués de gauche à droite dans une condition. 
 
-Les parenthèses `()` fonctionne en informatique comme en mathématiques
+Les parenthèses `()` fonctionnent en informatique comme en mathématiques
 La priorité de la condition se dirige dans la parenthèse en 1er.
 
 
@@ -1302,7 +1306,7 @@ Reprendre l'exercice précédent en ajoutant la dernière condition :
 
 ## Boucle
 
-Une boucle permet d'executer plusieurs fois un bloc de code, tant que la condition est vraie.
+Une boucle permet d'exécuter plusieurs fois un bloc de code, tant que la condition est vraie.
 
 
 
@@ -1323,7 +1327,7 @@ while (condition) // tant que la condition est vraie
 
 ## Exemple pratique 
 
-Les boucles `while` sont très pratique pour, un exemple: itérer sur un tableau.
+Les boucles `while` sont très pratiques pour, un exemple: itérer sur un tableau.
 
 Rappel, 
 Un tableau possède plusieurs éléments d'un même type;
@@ -1387,33 +1391,33 @@ Console.WriteLine(tableau[elems]); // afficher l'element elems du tableau
 }
 ```
 
-On vois bien ici, contrairement a la boucle `while`, `elems` s'incremente automatiquement a la fin du bloc conditionnelle.
+On voit bien ici, contrairement à la boucle `while`, `elems` s'incrémente automatiquement à la fin du bloc conditionnel.
 
 ---
 <!-- TODO : exercice  boucle foreach -->
 
 ## Fonction
 
-Les fonctions sont des blocs de code qui peuvent etre appelé n'importe quand dans le code.
+Les fonctions sont des blocs de code qui peuvent être appelé n'importe quand dans le code.
 
-Une fonction est une serie d'instruction qui permet de realiser une tache precise.
+Une fonction est une série d'instructions qui permet de réaliser une tâche précise.
 
-Elle peut recevoir un ou des `parametres` en entree et peut renvoyer une variable en sortie, le `retour`.
+Elle peut recevoir un ou des `parametres` en entrée et peut renvoyer une variable en sortie, le `retour`.
 
 
 ---
 
 ## Visualiser une fonction 
 
-Une fonction peut etre vu comme une usine avec tapis roulant d'entre (`parametres`) et tapis roulant de sortis (`retour`).
+Une fonction peut être vue comme une usine avec un tapis roulant d'entrée (`parametres`) et un tapis roulant de sortie (`retour`).
 
-On donne un ou des matiere premiere a l'usine en entree (`parametres`), et l'usine nous resortira un produit fini (`retour`).
+On donne un ou des matières premières à l'usine en entrée (`parametres`), et l'usine nous resortira un produit fini (`retour`).
 
 ---
 
 ## Block de code, Organiser son code pour plus de clarete
 
-Une fonction permet d'organiser son code pour plus de clareté, de separer les taches en bloc precie.
+Une fonction permet d'organiser son code pour plus de clareté, de séparer les tâches en bloc précis.
 
 ```csharp
 void Main()
@@ -1431,8 +1435,8 @@ void fonction1()
 ## Scope de fonction
 <!-- rappel sur les variables dans le scopes et en dehor -->
 
-Les variable creer dans une fonction ne sont pas visible dans les autres fonctions.
-La fonction va declarer son scope, donc son champ d'action.
+Les variables créent dans une fonction ne sont pas visibles dans les autres fonctions.
+La fonction va déclarer son scope, donc son champ d'action.
 
 ---
 
@@ -1456,7 +1460,7 @@ Console.WriteLine("var in function " + a);
 
 ## Parameteres passe
 
-Les parametres sont l'entree d'une fonction, ils permettent de passer des variables a la fonction.
+Les paramètres sont l'entrée d'une fonction, ils permettent de passer des variables à la fonction.
 
 ```csharp
 void main()
@@ -1475,11 +1479,11 @@ Console.WriteLine(a + b); // affiche 11;
 
 ## Parameteres passe
 
-Le nom des parametres n'est pas obligatoirement identique a celle passer dans la fonction.
+Le nom des paramètres n'est pas obligatoirement identique à celui passé dans la fonction.
 
-Ils seront, dans la fonction, generique pour pouvoir etre claire.
+Ils seront, dans la fonction, génériques pour pouvoir être clair.
 
-Le Type par contre doit etre le meme.
+Le Type par contre doit être le même.
 
 
 ---
@@ -1511,7 +1515,7 @@ Console.WriteLine(str); // affichera la string;
 
 ## Parametre par default
 
-Les parametres peuvent avoir une valeur par default, si il n'est pas passer a la fonction.
+Les paramètres peuvent avoir une valeur par default, si il n'est pas passer a la fonction.
 
 ```csharp
 void main()
@@ -1574,7 +1578,7 @@ return (x * x);
 
 ## Associer le retour d'une fonction
 
-On peut associer le retour d'une fonction a une variable.
+On peut associer le retour d'une fonction à une variable.
 
 ```csharp
 void main() 
@@ -1600,29 +1604,29 @@ return (x * x);
 <!-- gros exercice -->
 ## Exercice
 
-- Creer une fonction qui prend en parametre un tableau d'entier, et qui renvoie le plus grand element du tableau.
-- Creer une fonction qui prend en parametre un tableau d'entier, et qui renvoie la somme de tous les elements du tableau.
+- créer une fonction qui prend en paramètre un tableau d'entier, et qui renvoie le plus grand élément du tableau.
+- créer une fonction qui prend en paramètre un tableau d'entier, et qui renvoie la somme de tous les éléments du tableau.
 
 
 ---
 
-# Reference
+# Référence
 
 ---
 
-## Qu'est ce qu'une reference?
+## Qu'est ce qu'une référence?
 
-Une reference permet d'acceder a la variable et la modifier en dehor de son scope dans des fonctions.
+Une référence permet d'accéder à la variable et la modifier en dehor de son scope dans des fonctions.
 
 
 ---
 
-## Quand utiliser la reference de ma variable
+## Quand utiliser la référence de ma variable
 
-La reference est utile dans des fonctons qui ont pour but de modifier les variables en parametre.
+La référence est utile dans des fonctons qui ont pour but de modifier les variables en paramètre.
 
 
-En C# certaines variable comme les `tableaux` sont de type reference de base. 
+En C# certaines variable comme les `tableaux` sont de type référence de base. 
 
 Les variables classiques, `int `, `float` , `string` ne le sont pas.
 
@@ -1662,7 +1666,7 @@ Console.WriteLine("after fonction2 "+ num); // afficher 18
 
 ## Comment utiliser la reference
 
-Mot clef `ref` devant le type de la variable dans les parametre de la fonction.
+Mot clef `ref` devant le type de la variable dans les paramètre de la fonction.
 
 ---
 
@@ -1689,8 +1693,8 @@ Console.WriteLine("after fonction2 "+ num); // affichera 1000
 
 ## Exercice avec les references
 
-Ecrire une fonction `is_Billi` qui prend en parametre une reference sur string, renvoie un boolen.
-La fonction verifie si l'argument est egale a `Billi` est renvera `true` si vrai.
+Ecrire une fonction `is_Billi` qui prend en paramètre une référence sur string, renvoie un booléen.
+La fonction vérifie si l'argument est égale à `Billi` et renvera `true` si vrai.
 Sinon modifier l'argument pour le transforme en `Billi` et renvoyer false.
 
 
@@ -1702,9 +1706,9 @@ Sinon modifier l'argument pour le transforme en `Billi` et renvoyer false.
 
 ## Librairie
 
-Une librairie est un ensemble de fonction deja ecrite, utilisable dans notre programme, reunit dans une classe.
+Une librairie est un ensemble de fonction déjà écrite, utilisable dans notre programme, réunit dans une classe.
 
-Tout au long de ce cour nous avons utiliser `Console.WriteLine`, Console etant un classe avec des fonctions comme WriteLine.
+Tout au long de ce cour nous avons utiliser `Console.WriteLine`, Console étant un classe avec des fonctions comme WriteLine.
 
 
 
@@ -1712,7 +1716,7 @@ Tout au long de ce cour nous avons utiliser `Console.WriteLine`, Console etant u
 
 ## Random
 
-La classe `Random` permet de generer des nombres aleatoires.
+La classe `Random` permet de générer des nombres aléatoires.
 
 ```csharp
 Random rnd = new Random();
@@ -1723,18 +1727,18 @@ int x = rnd.Next(0, 100); // x est un nombre aleatoire entre 0 et 100
 
 ## Dictionnaire
 
-La classe `Dictionary` permet de creer un tableau de `clef / valeur`.
+La classe `Dictionary` permet de créer un tableau de `clef / valeur`.
 Les avantages sont : 
-- les methodes de base a dispositions.
+- les méthodes de base a dispositions.
 - Le faites que le "tableau" soit extensible.
-- La recherche des elements rapide.
+- La recherche des éléments rapide.
 
 
 ---
 
 ## Declaration
 
-Un dictionnaire ce declare avec 2 types;
+Un dictionnaire ce déclare avec 2 types;
 Un type pour la `clef`, un pour la `valeur`.
 
 
@@ -1791,8 +1795,8 @@ Console.WriteLine("La clef 1 existe dans le dictionnaire");
 - `Add` : permet d'ajouter une clef / valeur
 - `Remove` : permet de supprimer une clef / valeur
 - `Clear` : permet de vider le dictionnaire
-- `ContainsKey` : permet de verifier si une clef existe
-- `ContainsValue` : permet de verifier si une valeur existe
+- `ContainsKey` : permet de vérifier si une clef existe
+- `ContainsValue` : permet de vérifier si une valeur existe
 
 ---
 
@@ -1802,27 +1806,27 @@ Console.WriteLine("La clef 1 existe dans le dictionnaire");
 
 ## Qu'est ce que la POO (Programmation oriente object)
 
-La programmation orienté objet est une methode de programmation qui permet de structurer un programme en `objet`.
+La programmation orienté objet est une méthode de programmation qui permet de structurer un programme en `objet`.
 
-Un objet est une representation d'une entite, comme une voiture, un chat, un humain, un programme, etc...
+Un objet est une représentation d'une entité, comme une voiture, un chat, un humain, un programme, etc...
 
 ---
 
 ## Pourquoi POO 
 
-La POO permet de creer des objets qui ont des proprietes et des methodes.
+La POO permet de créer des objets qui ont des propriétés et des méthodes.
 Cela permet :
 - Reutilisation du code
-- Efficacite de l'appel de fonction
-- Facilite la maintenance
+- Efficacité de l'appel de fonction
+- Facilité la maintenance
 
 ---
 
 ## Pourquoi POO 
 
-- Facilite le depannage
-- Facilite la lecture du code
-- Facilite la modification du code
+- Facilité le dépannage
+- Facilité la lecture du code
+- Facilité la modification du code
 
 ---
 
@@ -1832,7 +1836,7 @@ Cela permet :
 ---
 
 ## Les classes
-Une classe est une structure de donnees qui permet de definir un nouvel objet.
+Une classe est une structure de données qui permet de définir un nouvel objet.
 
 
 Une classe est un modele de données.
@@ -1844,7 +1848,7 @@ Exemple : `Console`, `Dictionary`, `Math`
 
 ## Declaration d'une classe
 
-Une classe se declare avec le mot clef `class` suivi du nom de la classe.
+Une classe se déclare avec le mot clef `class` suivi du nom de la classe.
 
 ```csharp
 public class Personne { // Declaration d'une classe Personne
@@ -1857,7 +1861,7 @@ public class Personne { // Declaration d'une classe Personne
 
 ## Classes privees et publiques 
 
-Nous pouvons declarer les classes de deux manieres differentes, en utilisant les mots cles a mettre devant `class`: 
+Nous pouvons déclarer les classes de deux manières différentes, en utilisant les mots clés a mettre devant `class`: 
 - `Public`
 - `Private`
 
@@ -1868,9 +1872,9 @@ Nous pouvons declarer les classes de deux manieres differentes, en utilisant les
 
 ## Classe Private
 
-Une classe private ne peut etre utiliser que dans la classe ou elle est declaree. Nous parlons ici de l'encapsulation d'une classe.
+Une classe private ne peut être utilisée que dans la classe ou elle est déclarée. Nous parlons ici de l'encapsulation d'une classe.
 
-Car oui, une classe peut etre declarer dans une classe.
+Car oui, une classe peut être déclarée dans une classe.
 
 ```csharp
 private class Personne { // Classe private
@@ -1882,7 +1886,7 @@ private class Personne { // Classe private
 
 ## Classe Public
 
-Une classe public peut etre utilisee dans toute le programme.
+Une classe public peut être utilisée dans toute le programme.
 
 ```csharp
 public class Personne { // Classe public
@@ -1910,13 +1914,13 @@ private float taille ;
 
 ## Attributs private
 
-De la meme maniere, un attribut private ne peut etre utiliser que dans la classe ou il est declare.
+De la même maniere, un attribut private ne peut etre utiliser que dans la classe ou il est déclaré.
 
 ---
 
 ## Attributs public
 
-Un attribut public peut etre utiliser dans toute le programme.
+Un attribut public peut être utilisée dans toute le programme.
 
 Exemple : 
 
@@ -1939,17 +1943,17 @@ private int serial_number = 3201244;
 
 ## Encapsulation 
 
-L'encapsulation c'est le faite de donner ou non acces aux attributs a l'utilisateur.
+L'encapsulation c'est le faite de donner ou non accès aux attributs a l'utilisateur.
 
-Lorsque vous creez une classe, tout les attributs n'ont pas vocations a etre accessible par l'utilisateur.
+Lorsque vous creez une classe, tout les attributs n'ont pas vocations à être accessible par l'utilisateur.
 
-Il est important d'organiser ses attributs priver/public pour proteger vos classes. Et garantir une meilleur experience a l'utilisateur.
+Il est important d'organiser ses attributs priver/public pour protéger vos classes. Et garantir une meilleur experience a l'utilisateur.
 
 ---
 
 ## getter / setter 
 
-Les getter et setter permet de definir le retour et l'attribution d'un attribut.
+Les getters et setters permet de définir le retour et l'attribution d'un attribut.
 
 `get` va retourner un attribut, et `set` va declarer/initialiser un attribut.
 
@@ -1959,7 +1963,7 @@ Les getter et setter permet de definir le retour et l'attribution d'un attribut.
 
 ## Utilisation get
 
-Dans l'exemple precedent, une voiture aura toujours 4 roues, donc on pourrait definir le retour de `wheel` a 4.
+Dans l'exemple précédent, une voiture aura toujours 4 roues, donc on pourrait definir le retour de `wheel` a 4.
 
 
 ```csharp
@@ -1976,7 +1980,7 @@ public int wheel {
 ---
 <!-- _backgroundImage: url(./Ressources/Theme/Flat.png) -->
 
-Un getter peut aussi retourner une variable de classe (meme private vu qu'il s'agit d'une fonction au sein de la classes)
+Un getter peut aussi retourner une variable de classe (même private vu qu'il s'agit d'une fonction au sein de la classes)
 
 ```csharp
 Car peugot  = new Car();
@@ -2001,7 +2005,7 @@ public string name {
 
 ## Utilisation set
 
-Le setter permet d'attribuer une valeur a une variable de classe.
+Le setter permet d'attribuer une valeur à une variable de classe.
 
 ```csharp
 Car peugot  = new Car();
@@ -2029,9 +2033,9 @@ public int wheel {
 
 ## Methode
 
-Une methode est une fonction qui est declaree dans une classe.
+Une méthode est une fonction qui est déclarée dans une classe.
 
-Elle peut etre `public` ou `private`. (toujours pour rendre la methode utilisable en dehors de la classe ou non )
+Elle peut être `public` ou `private`. (toujours pour rendre la methode utilisable en dehors de la classe ou non )
 
 ---
 
@@ -2057,7 +2061,7 @@ public string Presentation() {
 
 ## Methode avec des Parametres
 
-Une methode peut prendre des parametres, tout comme une fonction.
+Une méthode peut prendre des paramètres, tout comme une fonction.
 
 ```csharp
 Personne steve = new Personne();
@@ -2077,9 +2081,9 @@ public string Presentation(string nom, int age, string metier) {
 
 ## Overload
 
-Une methode peut etre redefinie avec des argument differents. 
+Une methode peut être redéfinie avec des argument différents. 
 
-C'est ce qu'on appel l'overload (surcharge en FR?) de methode.
+C'est ce qu'on appel l'overload (surcharge en FR?) de méthode.
 
 ```csharp
 Personne steve = new Personne();
@@ -2104,13 +2108,13 @@ public string Presentation(string nom, int age) { // overload de la methode pres
 
 ## Constructeur
 
-Un constructeur est une methode qui s'execute a l'instanciation d'une classe.
+Un constructeur est une méthode qui s'execute a l'instanciation d'une classe.
 
 `new` permet d'instancier une classe.
 
-Le constructeur permet d'instancier des variables de classe en meme temps que la declaration de la variable de classe.
+Le constructeur permet d'instancier des variables de classe en même temps que la declaration de la variable de classe.
 
-Le constructeur est une methode qui porte le nom de la classe 
+Le constructeur est une méthode qui porte le nom de la classe 
 
 Passant de 
 
@@ -2156,11 +2160,11 @@ public Personne() { // constructeur
 ---
 
 ## Parametres du constructeur
-Le constructeur peut prendre des parametres, comme un fonction.
+Le constructeur peut prendre des paramètres, comme un fonction.
 
 Toute les personnes ne s'appelle pas Steve et n'ont pas 32 ans.
 
-Nous allons creer un constructeur qui va `set` notre personne, histoire de la rendre un peu plus unique
+Nous allons créer un constructeur qui va `set` notre personne, histoire de la rendre un peu plus unique
 
 
 ---
@@ -2190,7 +2194,7 @@ public Personne(string c_nom, int c_age, string c_metier, float c_taille) { // c
 
 ## Parametres du constructeur
 
-Maintenant vous pouvez creer une variable de type Personne en la nommant comme vous le souhaitez sans avoir a toucher au code dans la classe.
+Maintenant vous pouvez créer une variable de type Personne en la nommant comme vous le souhaitez sans avoir à toucher au code dans la classe.
 
 
 <!-- TODO : exercice une classe avec deux constructeur un parametrique et sans parametre -->
@@ -2199,7 +2203,7 @@ Maintenant vous pouvez creer une variable de type Personne en la nommant comme v
 
 ## Overload de Constructeur
 
-Un constructeur peut etre redefini avec des argument differents. 
+Un constructeur peut etre redéfini avec des argument différents. 
 Comme une fonction.
 
 C'est ce qu'on appel l'overload de constructeur.
@@ -2244,7 +2248,7 @@ public Personne(string c_nom, int c_age) { // overload du constructeur
 
 ## Attribut Static
 
-Un attribut static est une variable qui appartient a la classe et non a l'objet.
+Un attribut static est une variable qui appartient à la classe et non à l'objet.
 
 Elle ne sera pas accessible via une variable; mais par le type.
 
@@ -2283,23 +2287,23 @@ public Personne(string c_nom) {
 
 ---
 
-## Qu'es ce que l'heritage
+## Qu'es ce que l'héritage
 
-L'heritage permet de reutiliser du code en creant des classes enfant a partir de classes parent.
+L'héritage permet de réutiliser du code en creant des classes enfant a partir de classes parent.
 
-La classe enfant va pouvoir utiliser les variables et les methodes de la classe parent.
+La classe enfant va pouvoir utiliser les variables et les méthodes de la classe parent.
 
-Elle peut aussi redefinir les methodes,
+Elle peut aussi redéfinir les méthodes,
 
 Ajouter de nouvelle variable,
 
-La classe parent peut imposer la definition de methode dans la classe enfant.
+La classe parent peut imposer la définition de méthode dans la classe enfant.
 
 ---
 
 ## A quoi ca sert
 
-Vous voulez creer un jeu video de combat et pour cela vous avez besoin de : 
+Vous voulez créer un jeu video de combat et pour cela vous avez besoin de : 
 - Personnages
 
 Vous voulez avoir plusieur classe de Personnages :
@@ -2311,48 +2315,48 @@ Vous voulez avoir plusieur classe de Personnages :
 
 ## A quoi ca sert
 
-Chaqu'une d'elle aura des propriete de bases telque: 
+Chaqu'une d'elle aura des propriété de bases telque: 
 - nom
 - pv (point de vie)
 - agilite (% d'esquive des attaques subit)
 - degat (attaque)
 
-Maintenant vous pouriez me dire  : " pourquoi ne pas faire une seul classe avec plusieur methode, on pourrait trouver un moyen ?"
+Maintenant vous pouriez me dire  : " pourquoi ne pas faire une seul classe avec plusieur méthode, on pourrait trouver un moyen ?"
 
 ---
 
 ## A quoi ca sert
 
-Daccord, apres la realisation de ma classe unique je  veux rajouter un personnage soigner et un envouteur;
+Daccord, apres la réalisation de ma classe unique je  veux rajouter un personnage soigner et un énvouteur;
 
-Je devrais changer des implementation dans la classe Personnage et faire attention a ne pas casser les implementations des autre personnages deja creer.
+Je devrais changer des implementation dans la classe Personnage et faire attention a ne pas casser les implementations des autre personnages deja créer.
 
-De plus il sera plus dur d'implementer des methodes uniques pour certain personnage.
+De plus il sera plus dur d'implémenter des méthodes uniques pour certain personnage.
 
 ---
 
 ## Avantage
-- Scalabilite du code
+- Scalabilité du code
 - Separtion et clarte
-- Pas de multiple definition des variables et methodes
-- Imposer des variables et des methodes
+- Pas de multiple définition des variables et méthodes
+- Imposer des variables et des méthodes
 
 
 ---
 
 ## Comment ca marche
 
-Lorsque l'on herite d'une classe, les attributs et les methodes de la classe parent sont accesible dans la classe enfant.
+Lorsque l'on hérite d'une classe, les attributs et les méthodes de la classe parent sont accéssible dans la classe enfant.
 
-Mots clefs : `:` + nom de classe parent lors de la declaration de la classe fils.
+Mots clefs : `:` + nom de classe parent lors de la déclaration de la classe fils.
 
 ---
 
 ## Comment ca marche
 
-Ici `Magicien` (`fils`) herite de `Personnage` ( `parent`)
+Ici `Magicien` (`fils`) hérite de `Personnage` ( `parent`)
 
-De ce faite, Magicien aura tout les attributs et methode de Personnage
+De ce faite, Magicien aura tout les attributs et méthode de Personnage
 
 
 ```csharp
@@ -2441,9 +2445,9 @@ public Ninja(string c_nom) : base(c_nom) {
 
 ## Protected
 
-Un attribut ou une methode protected est accessible dans la classe parent et dans la classe enfant.
+Un attribut ou une méthode protected est accessible dans la classe parent et dans la classe enfant.
 
-Contrairement a un attribut ou methode private qui ne peut etre accessible dans une classes herite.
+Contrairement à un attribut ou méthode private qui ne peut être accessible dans une classes hérite.
 
 Exemple :
 
@@ -2481,11 +2485,11 @@ public B() : base() {
 
 Une classe abstraite est une classe qui ne peut pas etre instancier.
 
-Elle sert de base a d'autre classe qui vont l'heriter.
+Elle sert de base a d'autre classe qui vont l'hériter.
 
-Une classe abstraite peut contenir des attributs et des methodes.
+Une classe abstraite peut contenir des attributs et des méthodes.
 
-Exemple : On ne veux pas de personnage qui n'appartienne a aucune classes deriver de personnage
+Exemple : On ne veux pas de personnage qui n'appartienne à aucune classes dériver de personnage
 
 ---
 
@@ -2560,11 +2564,11 @@ public override void attaquer() {
 
 ## Override
 
-Une methode peut aussi etre abstract.
+Une méthode peut aussi etre abstract.
 
-Cela veut dire que la methode doit etre redefini dans la classe enfant.
+Cela veut dire que la méthode doit etre redéfini dans la classe enfant.
 
-Si une methode est abstract dans la classe parent et n'est pas defini dans la classes enfant, le code ne fonctionnera pas.
+Si une méthode est abstract dans la classe parent et n'est pas defini dans la classes enfant, le code ne fonctionnera pas.
 
 
 Mot clef : `override`
@@ -2573,7 +2577,7 @@ Mot clef : `override`
 
 ## Interfaces
 
-ne interface est une classe abstraite qui ne contient que des methodes abstraites.
+Une interface est une classe abstraite qui ne contient que des méthodes abstraites.
 
 Une interface peut etre implementer dans une classe.
 

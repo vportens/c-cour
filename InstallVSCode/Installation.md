@@ -105,10 +105,10 @@ Verifier que le retour vous donne la version 6.0.*
 
 
 ## Comment ouvrir ce dossier avec vscode : <a id="opendir"></a>
-En premier lieu, creer un dossier sur le bureau,
+En premier lieu, créer un dossier sur le bureau,
 
 -	option 1 le drag and drop de fichier;
--	option 2 ouvrir directement un vscode et utiliser directement les options de demarage : ouvrir un dossier; Bureau -> nom_du_dossier_creer
+-	option 2 ouvrir directement un vscode et utiliser directement les options de demarage : ouvrir un dossier; Bureau -> nom_du_dossier_créer
 
 ---
 <!-- _backgroundImage: url(./Ressources/Theme/Flat.png) -->
@@ -116,8 +116,8 @@ En premier lieu, creer un dossier sur le bureau,
 
 ---
 
-## Creer des dossiers / fichiers <a id="createdir"></a>
-Pour creer des fichiers ou dossier avec VSCode, rien de plus simple.
+## créer des dossiers / fichiers <a id="createdir"></a>
+Pour créer des fichiers ou dossier avec VSCode, rien de plus simple.
 Il suffit de cliquer sur les petites iconnes sur la droite du nom de dossier et le nommer: 
 
 
@@ -172,11 +172,11 @@ Pour ouvrir un terminal dans un sous-dossier, clic droit sur le nom du dossier e
 
 ---
 
-## Objectif : Creer son premier programme c# : HelloWord
+## Objectif : créer son premier programme c# : HelloWord
 
-Architecture : Creer un dossier par exercice pour organiser ses programmes,
+Architecture : créer un dossier par exercice pour organiser ses programmes,
 	
-- Creer son dossier et y rentrer.
+- créer son dossier et y rentrer.
 
 ---
 

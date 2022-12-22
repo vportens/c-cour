@@ -147,7 +147,7 @@ N'oubliez pas de rajouter le nombre de villageois disponible dans la chefHome au
 
 ## Exercice 2
 Dans votre class Village, 
-Creer un attribut `listHouse` qui sera une un tableau de maison public, 
+créer un attribut `listHouse` qui sera une un tableau de maison public, 
 Dans le constructeur de village, vous l'initialiserez;
 apres avoir initialisez `chefHome`, telque votre `listHouse` continient `chefHome`.
 
@@ -172,7 +172,7 @@ Console.WriteLine(myVillage.listHouse.Length); // affichera 1
 
 Ajoutez des maison a votre list,
 
-Creer une methode public qui ajoutera une `House` a votre `listHouse`.
+créer une methode public qui ajoutera une `House` a votre `listHouse`.
 Prototype : `public void addHouse()`
 
 ---
@@ -237,15 +237,15 @@ Mais ce n'est pas suffisant !!!
 Mettez vos sujets au travails pour leurs chef (vous).
 
 
-Creer un fichier Mine.cs
+créer un fichier Mine.cs
 Avec une classe `Mine`
 
 ---
 
 ## Exercie 3
 
-Sur le meme model de `House`
-Creer des les attributs suivant : 
+Sur le même model de `House`
+créer des les attributs suivant : 
 - gain_stone (retournera 10)
 - stone_cost (retournera 2)
 - wood_cost (retournera 1)
@@ -260,10 +260,10 @@ Console.WriteLine(Mine.wood_cost) // affichera 1
 
 ## Exercie 3
 
-Creer un construceur `Mine()`
+créer un construceur `Mine()`
 qui affichera dans le terminal `"Mine created"`)
 
-Creer une methode public `mineStone` qui prendra en argument un nombre de villageois, et qui renvera le produit de `nombre de villageois * gain_stone`
+créer une methode public `mineStone` qui prendra en argument un nombre de villageois, et qui renvera le produit de `nombre de villageois * gain_stone`
 
 ---
 
@@ -275,7 +275,7 @@ Ajouter a la classes `Village` :
 - une methode public `mineStone` qui prendra en parametre un nombre de villageois.
 
 Lorsqu'un villageois utilise la methode `mineStone` celui-ci consomme `Mine.stone_cost` et `Mine.wood_cost`
-Et celui-ci vous rapportera `Mine.gain_stone` (creer une methode dans la classes `Ressource`  `public addStone(int nbr)` qui ajouteras nbr a stone).
+Et celui-ci vous rapportera `Mine.gain_stone` (créer une methode dans la classes `Ressource`  `public addStone(int nbr)` qui ajouteras nbr a stone).
 
 ---
 <!-- _backgroundImage: url(./Ressources/Theme/Flat.png) -->
@@ -319,7 +319,7 @@ Vous avez de la pierre.
 Maintenant on veux du bois.
 
 
-A l'image de `Mine`, creer une classes `Forest` dans un fichier Forest.cs
+A l'image de `Mine`, créer une classes `Forest` dans un fichier Forest.cs
 
 Elle aura les attributs suivants (comme Mine en remplacant gain_stone par gain_wood) :
 - `gain_wood` 
@@ -392,14 +392,14 @@ De la pierre,
 Maintenant la population dois s'agrandir.
 
 Vous avez tout pour produire des ressources a l'infinie,
-vous avez meme creer une methode pour ajouter des maison a votre village.
+vous avez même créer une methode pour ajouter des maison a votre village.
 Maintenant passons de la theorie a la pratique et mettons la mains a la bourse.
 
 ---
 
 ## Exercice 5
 
-Creer une methode pour pour construire des maisons :
+créer une methode pour pour construire des maisons :
 - nom de la methode `buildHouse`
 - parametre `int` , qui representera le nombre de maison que vous voulez construire.
 
