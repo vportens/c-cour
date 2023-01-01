@@ -14,3 +14,9 @@ _backgroundImage: url(../../../Ressources/Theme/Title.png)
 # Exercice Fonction 
 
 ---
+
+
+## Exercice 3 
+
+Faire une fonction ```split```, elle prendra deux string en argument et renverra un tableau de string tel que:
+
