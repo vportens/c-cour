@@ -1,76 +1,117 @@
 section {
-	display: flex;
-	align-items: center;
-	justify-items: center;
-	flex-direction: column;
-	/* text-align: center; */
+    display: flex;
+
+    flex-direction: column;
+    /* text-align: center; */
 }
 
 p,
-h1,
-h2,
 ul,
 li,
 td {
-	/* margin: auto; */
-	color: white;
-	text-shadow: 1px 0.5px 0.2ch rgba(0, 0, 0, 0.274);
-	/* border: 1px solid rgba(0, 0, 0, 0.274); */
-	min-width: 100%;
+    /* margin: auto; */
+    align-items: left;
+    justify-items: left;
+    color: white;
+    text-shadow: 1px 0.5px 0.2ch rgba(0, 0, 0, 0.274);
+    text-align: left;
+    /* border: 1px solid rgba(0, 0, 0, 0.274); */
 }
 
 section > h2 {
-	width: 70%;
-	text-align: center;
-	/* margin-top: 200px; */
-	padding-bottom: 30px;
-	align-items: center;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 0.5px 0.2ch rgba(0, 0, 0, 0.274);
+    /* margin-top: 200px; */
+    padding-bottom: 30px;
+    align-items: center;
 }
 
-/* h2 + * {
-	margin-top: 200px;
-} */
-@counter-style thumbs {
-	system: cyclic;
-	symbols: "\1F4CC";
-	suffix: " ";
-	box-shadow: 10px 5px 10px 0 rgba(0, 0, 0, 0.5);
-}
-
-li {
-	list-style-type: thumbs;
-	text-align: left;
-	justify-content: left;
-}
-
-.language-javascript {
-	box-shadow: 10px 5px 10px 0 rgba(0, 0, 0, 0.7);
-	border-radius: 10px;
-}
-.language-bash {
-	box-shadow: 10px 5px 10px 0 rgba(0, 0, 0, 0.7);
-	border-radius: 10px;
-}
-.language-csharp{
-	box-shadow: 10px 5px 10px 0 rgba(0, 0, 0, 0.7);
-	border-radius: 10px;
-}
-
-ul {
-	text-align: left;
-}
-
-section > pre {
-	width: 100%;
-	/* border-radius: 10px; */
-	text-align: left;
-	/* box-shadow: 10px -11px 10px 0 rgba(0, 0, 0, 0.5); */
+h2::first-letter {
+    text-transform: uppercase;
 }
 
 h1 {
-	max-width: 70%;
-	position: absolute;
-	top: 45%;
-	width: 70%;
-	text-align: center;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    width: 90%;
+    top: 40%;
+    text-align: center;
 }
+
+/* h2 + * {
+    margin-top: 200px;
+} */
+@counter-style thumbs {
+    system: cyclic;
+    symbols: "\1F4CC";
+    suffix: " ";
+    box-shadow: 10px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+li {
+    list-style-type: thumbs;
+    text-align: left;
+    width: 90%;
+}
+
+.language-javascript {
+    box-shadow: 10px 5px 10px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+.language-bash {
+    box-shadow: 10px 5px 10px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+ul {
+    text-align: left;
+    width: 90%;
+    margin-left: 100px;
+}
+
+section > marp-pre {
+    align-items: center;
+    width: 90%;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 10px -11px 10px 0 rgba(0, 0, 0, 0.5);
+    --color-background: rgb(199, 196, 196);
+    --color-dimmed: #343e48;
+}
+
+:not(marp-pre) > code {
+    --color-background: rgb(199, 196, 196);
+    --color-dimmed: #343e48;
+    box-shadow: 10px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 6px;
+    box-shadow: 10px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* .language-javascript {
+    box-shadow: 10px 5px 10px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+.language-java {
+    box-shadow: 10px 5px 10px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+.language-bash {
+    box-shadow: 10px 5px 10px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+.language-jsp {
+    box-shadow: 10px 5px 10px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+} */
+
+/* marp-pre:has(> code) {
+    box-shadow: 10px 5px 10px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    color: red;
+} */
