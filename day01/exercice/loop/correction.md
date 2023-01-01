@@ -95,3 +95,7 @@ double average = (double)total / numbers.Length;
 // Output the average to the console
 Console.WriteLine("Average: " + average);
 ```
+
+---
+
+## Exercice 10 

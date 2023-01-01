@@ -48,7 +48,7 @@ sa longueur : `.Lenght`;
 
 ---
 
-<!-- _backgroundImage: url(../Ressources/Theme/Flat.png) -->
+## Exemple pratique
 
 ```csharp
 // parcourir son tableau avec un boucle while 
@@ -66,6 +66,45 @@ A partir de maintenant nous utiliserons une convention de code pour nommer une v
 
 
 <!-- TODO : exercice avec boucle simple while -->
+
+---
+
+## Boucle for
+
+La boucle for permet de répéter un bloc de code un nombre défini de fois.
+
+```csharp
+for (initialisation; condition; incrémentation)
+{
+// bloc de code a repeter
+}
+```
+
+---
+
+## Boucle for
+
+Mots clefs :
+- `for`
+- `initialisation`
+- `condition`
+- `incrémentation`
+
+---
+
+## Boucle for
+
+```csharp
+// parcourir son tableau avec un boucle while 
+int[] tableau = { 1, 2, 3, 4, 5 };
+
+for (int i = 0; i < tableau.Lenght; i++)
+{
+Console.WriteLine(tableau[i]); // afficher l'element i du tableau
+}
+```
+
+On voit bien ici, contrairement à la boucle `while`, `i` s'incrémente automatiquement à la fin du bloc conditionnel.
 
 ---
 
@@ -90,7 +129,8 @@ Mots clefs :
 
 ---
 
-<!-- _backgroundImage: url(../Ressources/Theme/Flat.png) -->
+## Boucle foreach
+
 ```csharp
 // parcourir son tableau avec un boucle while 
 int[] tableau = { 1, 2, 3, 4, 5 };
@@ -103,3 +143,21 @@ Console.WriteLine(tableau[elems]); // afficher l'element elems du tableau
 ```
 
 On voit bien ici, contrairement à la boucle `while`, `elems` s'incrémente automatiquement à la fin du bloc conditionnel.
+
+
+---
+
+## Boucle infinie et sortie
+
+Si la condition d'arrets de la boucle n'est jamais vraie, alors votre code bouclera a l'infinie.
+On peut trouver des interets a creer ce genre de boucle, sachant que l'on peut sortir d'une boucle avec le mot clef :
+```break```
+
+```csharp 
+while (true) {
+    string? txt = Console.ReadLine();
+    if (txt == "exit") {
+        break;
+    }
+}
+```

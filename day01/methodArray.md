@@ -88,18 +88,22 @@ Elle prend comme argument :
 - Le tableau dans lequel on veux copier les elements
 - Le nombre d’éléments a copier
 
+---
+
+<br>
+<br>
 
 ```csharp
 int[] myArray = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 int[] myArrayCopy = new int[5];
 Array.Copy(myArray, myArrayCopy, 5);
-for (int i = 0; i < myArray.Length; i++)
+for (int i = 0; i < myArrayCopy.Length; i++)
 {
-    Console.WriteLine(myArray[i]); // Affiche 023456789
+    Console.WriteLine(myArrayCopy[i]); // Affiche 12345
 }
 ```
 
---
+---
 
 ## Copy()
 
@@ -113,9 +117,9 @@ Elle peut prendre un index de départ pour le tableau a remplir en plus du nombr
 int[] myArray = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 int[] myArrayCopy = new int[5];
 Array.Copy(myArray, 3, myArrayCopy, 0, 5);
-for (int i = 0; i < myArray.Length; i++)
+for (int i = 0; i < myArrayCopy.Length; i++)
 {
-    Console.WriteLine(myArray[i]); // Affiche 023456789
+    Console.WriteLine(myArrayCopy[i]); // Affiche 45678 
 }
 ```
 
@@ -146,8 +150,7 @@ for (int i = 0; i < myArray.Length; i++)
 
 La méthode Find() recherche un élément dans un tableau et retourne la première occurrence de cet élément.
 
-Elle prend comme paramètres l'array dans lequel on recherche l’élément.
-Et la condition, qui définira l’élément recherché.
+Elle prend comme paramètres l'array dans lequel on recherche l’élément et la condition, qui définira l’élément recherché.
 
 ```csharp
 int[] myArray = {1, 2, 3, 4, 5, 6, 7, 8, 9};
@@ -170,7 +173,7 @@ int[] myArray = {9, 8, 6, 7, 5, 4, 3, 2, 1};
 Array.Sort(myArray);
 for (int i = 0; i < myArray.Length; i++)
 {
-    Console.WriteLine(myArray[i]); // Affiche 023456789
+    Console.WriteLine(myArray[i]); // Affiche 123456789
 }
 ```
 
@@ -186,7 +189,7 @@ int[] myArray = {9, 3, 13, 12, 45, 6, 7, 8, 9};
 Array.Sort(myArray, 3, 3);
 for (int i = 0; i < myArray.Length; i++)
 {
-    Console.WriteLine(myArray[i]); // Affiche 023456789
+    Console.WriteLine(myArray[i]); // Affiche 9 3 13 6 12 45 7 8 9
 }
 ```
 
