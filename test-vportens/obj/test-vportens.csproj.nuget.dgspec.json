@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/laclide/Desktop/c-cour/test/test.csproj": {}
+    "/Users/laclide/Desktop/c-cour/test-vportens/test-vportens.csproj": {}
   },
   "projects": {
-    "/Users/laclide/Desktop/c-cour/test/test.csproj": {
+    "/Users/laclide/Desktop/c-cour/test-vportens/test-vportens.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/laclide/Desktop/c-cour/test/test.csproj",
-        "projectName": "test",
-        "projectPath": "/Users/laclide/Desktop/c-cour/test/test.csproj",
+        "projectUniqueName": "/Users/laclide/Desktop/c-cour/test-vportens/test-vportens.csproj",
+        "projectName": "test-vportens",
+        "projectPath": "/Users/laclide/Desktop/c-cour/test-vportens/test-vportens.csproj",
         "packagesPath": "/Users/laclide/.nuget/packages/",
-        "outputPath": "/Users/laclide/Desktop/c-cour/test/obj/",
+        "outputPath": "/Users/laclide/Desktop/c-cour/test-vportens/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/laclide/.nuget/NuGet/NuGet.Config"

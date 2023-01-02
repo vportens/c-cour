@@ -1,0 +1,15 @@
+/Users/laclide/Desktop/c-cour/test-vportens/obj/Debug/net6.0/test-vportens.csproj.AssemblyReference.cache
+/Users/laclide/Desktop/c-cour/test-vportens/obj/Debug/net6.0/test-vportens.GeneratedMSBuildEditorConfig.editorconfig
+/Users/laclide/Desktop/c-cour/test-vportens/obj/Debug/net6.0/test-vportens.AssemblyInfoInputs.cache
+/Users/laclide/Desktop/c-cour/test-vportens/obj/Debug/net6.0/test-vportens.AssemblyInfo.cs
+/Users/laclide/Desktop/c-cour/test-vportens/obj/Debug/net6.0/test-vportens.csproj.CoreCompileInputs.cache
+/Users/laclide/Desktop/c-cour/test-vportens/bin/Debug/net6.0/test-vportens
+/Users/laclide/Desktop/c-cour/test-vportens/bin/Debug/net6.0/test-vportens.deps.json
+/Users/laclide/Desktop/c-cour/test-vportens/bin/Debug/net6.0/test-vportens.runtimeconfig.json
+/Users/laclide/Desktop/c-cour/test-vportens/bin/Debug/net6.0/test-vportens.dll
+/Users/laclide/Desktop/c-cour/test-vportens/bin/Debug/net6.0/test-vportens.pdb
+/Users/laclide/Desktop/c-cour/test-vportens/obj/Debug/net6.0/test-vportens.dll
+/Users/laclide/Desktop/c-cour/test-vportens/obj/Debug/net6.0/refint/test-vportens.dll
+/Users/laclide/Desktop/c-cour/test-vportens/obj/Debug/net6.0/test-vportens.pdb
+/Users/laclide/Desktop/c-cour/test-vportens/obj/Debug/net6.0/test-vportens.genruntimeconfig.cache
+/Users/laclide/Desktop/c-cour/test-vportens/obj/Debug/net6.0/ref/test-vportens.dll
