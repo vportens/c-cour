@@ -16,7 +16,20 @@ _backgroundImage: url(../../../Ressources/Theme/Title.png)
 ---
 
 
-## Exercice 3 
+## Exercice pyramide
 
-Faire une fonction ```split```, elle prendra deux string en argument et renverra un tableau de string tel que:
+Creer un fonction qui fait va afficher une pyramide de taille n.
+
+N represente le nombre d'etage de la pyramide.
+
+Le premiere etage de la pyramide (le sommet); a une hauteur de 3 et une base de 5 : 
+
+```csharp
+   /*\
+  /***\
+ /*****\
+```
+
+
+
 
