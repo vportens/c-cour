@@ -321,6 +321,9 @@ Une interface peut etre implementer dans une classe.
 
 Dans ta classe abstraite il peut y avoir des fonctions/méthodes avec une implémentation. 
 
+--- 
+## Interfaces
+
 Tu peux également avoir des variables, alors que les interfaces ne peuvent avoir que des propriétés.
 
 Tu ne peux hériter que d'une seule classe abstraite, alors qu'avec les interfaces non.

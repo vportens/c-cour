@@ -1,68 +1,51 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+Cercle monCercle = new Cercle(5.0);
+monCercle.AfficherSurface();
 
-/*
-void printTab(int[] tab)
+Rectangle monRectangle = new Rectangle(3.0, 4.0);
+monRectangle.AfficherSurface();
+
+
+
+abstract class FormeGeometrique
 {
-    for (int i = 0; i < tab.Length; i++)
+    public abstract double CalculerSurface();
+
+    public void AfficherSurface()
     {
-        Console.Write(tab[i] + " ");
+        CalculerSurface();
+        Console.WriteLine("La surface de la forme géométrique est de {0} unités carrées.",  CalculerSurface());
     }
-    Console.WriteLine();
 }
 
-void fillTab(int[] tab, int a = 0, int b = 100)
+class Cercle : FormeGeometrique
 {
-    var random = new Random();
-    for (int i = 0; i < tab.Length; i++)
+    private double rayon;
+
+    public Cercle(double rayon)
     {
-        tab[i] = random.Next(a, b);
+        this.rayon = rayon;
+    }
+
+    public override double CalculerSurface()
+    {
+        return  Math.PI * rayon * rayon;
     }
 }
 
-int tabSize = Convert.ToInt32(Console.ReadLine());
-int[] tab = new int[tabSize]; 
-
-fillTab(tab, 100, 1000);
-printTab(tab);
-*/
-
-/*
-string name = "Jan";
-Console.WriteLine(name);
-
-bool is_Billi(ref string nameToCheck) {
-    if (nameToCheck == "Billi") {
-        return true;
-    } else {
-        nameToCheck = "Billi";
-        return false;
-    }
-}
-
-bool ret = is_Billi(ref name);
-
-Console.WriteLine(name);
-Console.WriteLine(ret);
-
-*/
-
-/*
-void draw2DimTab(int[,] tab)
+class Rectangle : FormeGeometrique
 {
-    for (int i = 0; i < tab.GetLength(0); i++)
+    private double largeur;
+    private double hauteur;
+
+    public Rectangle(double largeur, double hauteur)
     {
-        for (int j = 0; j < tab.GetLength(1); j++)
-        {
-            Console.Write(tab[i, j] + " ");
-        }
-        Console.WriteLine();
+        this.largeur = largeur;
+        this.hauteur = hauteur;
+    }
+
+    public override double CalculerSurface()
+    {
+        return largeur * hauteur;
     }
 }
-
-int [,] tab = new int[2,3] { {1,2,3}, {4,5,6} };
-
-Console.WriteLine(tab.GetLength(0));
-draw2DimTab(tab);
-
-*/
