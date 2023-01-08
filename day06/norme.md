@@ -297,6 +297,21 @@ else {
 
 ---
 
+## Lisibilité
+
+5. Les variables constantes devronts etre mis en constantes (const) lors de l'instanciations.
+
+```csharp
+const double PI = 3.1416; // le nombre pi mis en constante
+double rayonSphere = 0.0; // rayon de la sphère saisi
+double volumeSphere = 0.0; // volume de la sphère calculé
+
+Console.Out.WriteLine("Entrez le rayon de la sphère.");
+rayonSphere = double.Parse(Console.In.ReadLine());
+volumeSphere = 4 * PI * rayonSphere * rayonSphere * rayonSphere / 3;
+```
+
+---
 
 ## Les conventions de nommage
 
