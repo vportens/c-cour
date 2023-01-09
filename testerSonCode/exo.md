@@ -116,7 +116,22 @@ Pour le bien de l'exercice, faites un constructeur qui permet d'initailiser vos 
 ---
 
 
+## Exercice 1.2
+
+Ajouter une fonction `rr()` qui fait une rotation des deux listes ainsi que `rrr()` qui reverse rotate les deux listes.
+
+
+---
+
 ## Exercice 2
 
 Vous devrez ensuite changer le type de la list en int []
 pour la partie refacto.
+
+
+---
+
+## Exercice Final
+
+Faire une programme qui prend en parametre une liste de nombre et qui les tri par ordre croissant en utilisant les fonctions de la class `MyStack`.
+
