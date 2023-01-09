@@ -3,12 +3,12 @@ marp: true
 paginate: true
 theme: gaia
 
-backgroundImage: url(./Ressource/Theme/Diapo.png)
-_backgroundImage: url(./Ressource/Theme/Title.png)
+backgroundImage: url(../Ressources/Theme/Diapo.png)
+_backgroundImage: url(../Ressources/Theme/Title.png)
 
 ---
 
-<link href="./Ressource/Theme/CSS/theme.css" rel="stylesheet">
+<link href="../Ressources/Theme/CSS/theme.css" rel="stylesheet">
 
 
 # TesterSonCode
