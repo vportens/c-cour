@@ -1,0 +1,138 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack.Tests/MyStack.Tests.csproj": {}
+  },
+  "projects": {
+    "/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack.Tests/MyStack.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack.Tests/MyStack.Tests.csproj",
+        "projectName": "MyStack.Tests",
+        "projectPath": "/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack.Tests/MyStack.Tests.csproj",
+        "packagesPath": "/home/viporten/.nuget/packages/",
+        "outputPath": "/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/viporten/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack/MyStack.csproj": {
+                "projectPath": "/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack/MyStack.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.112/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack/MyStack.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack/MyStack.csproj",
+        "projectName": "MyStack",
+        "projectPath": "/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack/MyStack.csproj",
+        "packagesPath": "/home/viporten/.nuget/packages/",
+        "outputPath": "/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/viporten/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.112/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

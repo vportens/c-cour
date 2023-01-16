@@ -39,14 +39,14 @@ class Ressources {
         if (stones + nbr <= stone_max)
             stones += nbr;
         else
-            stone = stone_max;
+            stones = stone_max;
     }
 
     public void addWood(int nbr) {
-        if (wood + nbr <= wood_max)
-            wood += nbr;
+        if (woods + nbr <= wood_max)
+            woods += nbr;
         else
-            wood = wood_max;
+            woods = wood_max;
     }
 
     public void upgrade() {

@@ -14,6 +14,8 @@ public class Forest {
 
     public int cutWood(int nbVillageois) {
         return nbVillageois * (gain_wood + 10 *(level - 1));
+
+
     }
 
     public void upgrade() {

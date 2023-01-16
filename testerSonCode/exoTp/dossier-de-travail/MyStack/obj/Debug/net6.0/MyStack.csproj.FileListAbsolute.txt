@@ -1,0 +1,12 @@
+/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack/obj/Debug/net6.0/MyStack.csproj.AssemblyReference.cache
+/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack/obj/Debug/net6.0/MyStack.GeneratedMSBuildEditorConfig.editorconfig
+/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack/obj/Debug/net6.0/MyStack.AssemblyInfoInputs.cache
+/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack/obj/Debug/net6.0/MyStack.AssemblyInfo.cs
+/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack/obj/Debug/net6.0/MyStack.csproj.CoreCompileInputs.cache
+/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack/bin/Debug/net6.0/MyStack.deps.json
+/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack/bin/Debug/net6.0/MyStack.dll
+/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack/bin/Debug/net6.0/ref/MyStack.dll
+/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack/bin/Debug/net6.0/MyStack.pdb
+/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack/obj/Debug/net6.0/MyStack.dll
+/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack/obj/Debug/net6.0/ref/MyStack.dll
+/home/viporten/Bureau/c-cour/testerSonCode/exoTp/dossier-de-travail/MyStack/obj/Debug/net6.0/MyStack.pdb

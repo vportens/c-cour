@@ -24,6 +24,8 @@ if (dayToTrad != null) // check if user putInput not empty
         Console.WriteLine("Day not found");
     }
 }
+else 
+    Console.WriteLine("put an imput please");
 
 }
 
@@ -40,25 +42,25 @@ Dictionary<string, int> lstNoteStudent = new Dictionary<string, int>() {
     {"Mick", 20},
     {"Keith", 22},
     {"Ronnie", 24},
-    {"Charlie", -1},  
+    {"Charlie", 10},  
 };
 
 int nbStudent = 0;
 int totalNote = 0;
+double averageNote = 0;
 int maxNote = 0;
 int minNote = 0;
-double averageNote = 0;
 
 
 
-foreach (var note in lstNoteStudent)
+foreach (var note in lstNoteStudent) // var --> typage dinamique, il comprend automatiquement le type de note (kvp ici[string, int])
 {
     totalNote += note.Value; // add the value of the note to the total
-    if (note.Value > maxNote || nbStudent == 0) // take the first student value as the first max value found
+    if (note.Value > maxNote ) // take the first student value as the first max value found
     {
         maxNote = note.Value;
     }
-    if (note.Value < minNote || nbStudent == 0) // take the first student value as the first min value found
+    if (note.Value < minNote) // take the first student value as the first min value found
     {
         minNote = note.Value;
     }
@@ -78,7 +80,7 @@ Console.WriteLine("Min note : " + minNote);
 
 
 //Exercice 3.2
-
+/*
 Contacts contacts = new Contacts();
 
 contacts.AddContact("John", "0123456789");
@@ -299,3 +301,5 @@ public class Cours {
     }
 
 }
+
+*/

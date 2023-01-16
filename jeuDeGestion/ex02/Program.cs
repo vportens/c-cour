@@ -48,11 +48,13 @@ public class Village{
 
     private void addHouse() {
         House[] newListHouse = new House[listHouse.Length + 1];
-        for (int i = 0; i < listHouse.Length; i++) {
+        for (int i = 0; i < listHouse.Length; i++) { // copie l'ancien tableau dans le nouveau
             newListHouse[i] = listHouse[i];
-        }
+        } // methode Array.Copy(listHouse, newListHouse, listHouse.Length);
         newListHouse[listHouse.Length] = new House();
         listHouse = newListHouse;
+        // sinon possiblite d'utiliser la methode Array.Resize directement
+        
     }
 
 

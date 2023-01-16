@@ -12,7 +12,7 @@ public class Mine {
     }
 
     public int mineStone(int nbVillageois) {
-        return nbVillageois * gain_stone;
+        return nbVillageois * (gain_stone+ 10 *(level - 1));
     }
 
     public void upgrade() {

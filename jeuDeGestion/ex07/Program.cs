@@ -155,12 +155,17 @@ public class Village{
     }
 
     public void upgradeMine() {
-        if (myRessources.getStone() >= ((Mine.gain_stone + 10 * (mine.getLevel() -1))) * 10)
-           mine.upgrade();
+        if (myRessources.getStone() >= (mine.mineStone(1) * 10))
+        {
+            myRessources.useStone(mine.mineStone(1) * 10);
+            mine.upgrade();
+        }
     }
     public void upgradeForest() {
-        if (myRessources.getWood() >= ((Forest.gain_wood + 10 * (forest.getLevel() -1)))* 10)
-           forest.upgrade();
+        if (myRessources.getWood() >= ((Forest.gain_wood + 10 * (forest.getLevel() -1)))* 10) {
+            myRessources.useWood(forest.cutWood(1) * 10);
+            forest.upgrade();
+        }
     }
 
 }

@@ -33,7 +33,7 @@ public class Village{
 
     public Village(string name) {
         Console.WriteLine("Village en cours de creation...");
-        System.Threading.Thread.Sleep(7000);
+        System.Threading.Thread.Sleep(7000); // attendre 7 secondes
         this.name = name;
         Console.WriteLine(name + " a donner son nom au village, maintenant le village portera le nom de \n" + name + "\n");
         System.Threading.Thread.Sleep(7000);
@@ -257,13 +257,19 @@ public class Village{
         myRessources.lookAround();
     }
 
-    public void upgradeMine() {
-        if (myRessources.getStone() >= ((Mine.gain_stone + 10 * (mine.getLevel() -1))) * 10)
-           mine.upgrade();
+   public void upgradeMine() {
+        if (myRessources.getStone() >= (mine.mineStone(1) * 10))
+        {
+            myRessources.useStone(mine.mineStone(1) * 10);
+            mine.upgrade();
+        }
     }
     public void upgradeForest() {
-        if (myRessources.getWood() >= ((Forest.gain_wood + 10 * (forest.getLevel() -1)))* 10)
-           forest.upgrade();
+        if (myRessources.getWood() >= ((Forest.gain_wood + 10 * (forest.getLevel() -1)))* 10) {
+            myRessources.useWood(forest.cutWood(1) * 10);
+            forest.upgrade();
+        }
     }
+
 
 }

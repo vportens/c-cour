@@ -7,6 +7,8 @@ myVillage.getName();
 Console.WriteLine(myVillage.getName());
 Console.WriteLine("nombre de villageois : " + myVillage.getVillageois());
 Console.WriteLine(House.stone_needed );
+House.stone_needed = 5;
+Console.WriteLine(House.stone_needed );
 Console.WriteLine(House.stone_needed);
 
 
